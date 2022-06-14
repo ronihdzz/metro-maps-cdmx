@@ -25,6 +25,14 @@ from servidor_networkx.servidor_red_metro import Servidor
 
 file_separacion_estaciones="procesamiento_datos\datos\procesados\estaciones_separacion.xlsx"
 
+RUTA_IMGENES_METRO="estaciones_metro/multimedia/imagenes/estaciones_metro/todas/"
+
+
+
+#self.bel_estadoVenti.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/sanlazaro.png);")
+
+
+
 SERVIDOR=Servidor(file_separacion_estaciones=file_separacion_estaciones)
 
 
@@ -89,6 +97,7 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
 
 
         self.show()
+    
 
     def obtener_ruta_mas_cercana(self):
         if self.indice_estacion_destino>0 and self.indice_estacion_origen>0:
@@ -120,9 +129,7 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
 
                 respuesta=SERVIDOR.get_ruta_mas_cercana(origen=nombre_origen,destino=nombre_destino)
                 ruta_seguir,no_estaciones_ruta,distancia_recorrer=respuesta
-
-
-
+                
                 ruta_seguir_str="\n -".join(['']+ruta_seguir)
                 ventanaDialogo = QMessageBox()
                 ventanaDialogo.setIcon(QMessageBox.Information)
@@ -166,7 +173,11 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
             self.cmb_box_origen.removeItem(index)
         elif self.indice_estacion_origen!=index:
             self.indice_estacion_origen=index
-            print("Estacion del metro elegida: ",self.lista_nombres_estaciones[index])
+
+            nombre_estacion=self.lista_nombres_estaciones[index]
+            imagen=RUTA_IMGENES_METRO+nombre_estacion+".png"
+            self.bel_estadoFoco.setStyleSheet(f"image: url(:/{imagen});")
+            print("Imagen: ",imagen)
 
 
 
@@ -193,7 +204,10 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
         elif self.indice_estacion_destino!=index:
             self.indice_estacion_destino=index
             print("Estacion del metro elegida: ",self.lista_nombres_estaciones[index])
-
+            nombre_estacion=self.lista_nombres_estaciones[index]
+            imagen=RUTA_IMGENES_METRO+nombre_estacion+".png"
+            self.bel_estadoVenti.setStyleSheet(f"image: url(:/{imagen});")
+            print("Imagen: ",imagen)
 
 
 

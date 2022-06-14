@@ -1,28 +1,374 @@
 <RCC>
+  <qresource prefix="autor">
+    <file>multimedia/imagenes/autor/roni_code_99.jpg</file>
+  </qresource>
   <qresource prefix="estaciones_metro">
+    <file>multimedia/imagenes/estaciones_metro/todas/allende.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/aragon.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/autobuses del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/azcapotzalco.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
-    <file>multimedia/imagenes/estaciones_metro/todas/boulevard.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bellas artes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bondojito.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard puerto aereo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/canal del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/centro medico.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chabacano.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/colegio militar.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/consulado.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/copilco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/coyoacan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuatro caminos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuitlahuac.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/deportivo 18 de marzo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/division del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/eduardo molina.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/el rosario.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ermita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/etiopiaplaza de la transparencia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/eugenia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ferreria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/fray servando.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/general anaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomez farias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/guerrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hangares.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hidalgo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hospital general.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/indios verdes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/instituto del petroleo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabel la catolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/jamaica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/la raza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/la villa-basilica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/lindavista.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/martin carrera.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/miguel angel de quevedo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/misterios.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/morelos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/nativitas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ninos heroes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/normal.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/norte 45.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/oceania.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/panteones.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pino suarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/politecnico.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/popotla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/portales.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/potrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/revolucion.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/salto del agua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san antonio abad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san cosme.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san lazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/santa anita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacuba.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/talisman.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tasquena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/terminal aerea.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tezozomoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tlatelolco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/universidad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/valle gomez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/vallejo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viaducto.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/villa de cortes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viverosderechos humanos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/xola.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zapata.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zocalo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/allende.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/aragon.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/autobuses del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bellas artes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bondojito.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard puerto aereo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/canal del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/centro medico.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chabacano.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/colegio militar.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/consulado.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/copilco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/coyoacan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuatro caminos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuitlahuac.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/deportivo 18 de marzo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/division del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/eduardo molina.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ermita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/etiopiaplaza de la transparencia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/eugenia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/fray servando.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/general anaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomez farias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/guerrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hangares.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hidalgo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hospital general.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/indios verdes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/instituto del petroleo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabel la catolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/jamaica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/la raza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/martin carrera.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/miguel angel de quevedo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/misterios.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/morelos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/nativitas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ninos heroes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/normal.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/oceania.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/panteones.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pino suarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/politecnico.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/popotla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/portales.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/potrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/revolucion.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/salto del agua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san antonio abad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san cosme.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san lazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/santa anita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacuba.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/talisman.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tasquena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/terminal aerea.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tlatelolco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/universidad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/valle gomez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viaducto.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/villa de cortes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viverosderechos humanos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/xola.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zapata.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zocalo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/allende.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bellas artes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bondojito.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard puerto aereo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/canal del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/centro medico.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chabacano.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/colegio militar.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/consulado.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/copilco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/coyoacan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuatro caminos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuitlahuac.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/deportivo 18 de marzo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/division del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ermita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/etiopiaplaza de la transparencia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/eugenia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/fray servando.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/general anaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomez farias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/guerrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hidalgo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hospital general.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/indios verdes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabel la catolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/jamaica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/la raza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/martin carrera.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/miguel angel de quevedo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/morelos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/nativitas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ninos heroes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/normal.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/panteones.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pino suarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/popotla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/portales.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/potrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/revolucion.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/salto del agua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san antonio abad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san cosme.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san lazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/santa anita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacuba.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/talisman.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tasquena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tlatelolco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/universidad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viaducto.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/villa de cortes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viverosderechos humanos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/xola.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zapata.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zocalo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/allende.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bellas artes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard puerto aereo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/centro medico.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chabacano.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/colegio militar.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/copilco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/coyoacan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuatro caminos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuitlahuac.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/deportivo 18 de marzo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/division del norte.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ermita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/etiopiaplaza de la transparencia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/eugenia.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/general anaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomez farias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/guerrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hidalgo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hospital general.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/indios verdes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabel la catolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/la raza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/miguel angel de quevedo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/nativitas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ninos heroes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/normal.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/panteones.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pino suarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/popotla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/portales.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/potrero.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/revolucion.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/salto del agua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san antonio abad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san cosme.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san lazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacuba.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tasquena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tlatelolco.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/universidad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viaducto.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/villa de cortes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viverosderechos humanos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/xola.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zapata.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zocalo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/allende.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/bellas artes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard puerto aereo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chabacano.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/colegio militar.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuatro caminos.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuitlahuac.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/ermita.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/general anaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomez farias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/hidalgo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabel la catolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/nativitas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/normal.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/panteones.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pino suarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/popotla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/portales.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/revolucion.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/salto del agua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san antonio abad.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san cosme.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san lazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacuba.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tasquena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/viaducto.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/villa de cortes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/xola.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zocalo.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard puerto aereo.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
-    <file>multimedia/imagenes/estaciones_metro/todas/gomezfarias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomez farias.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
-    <file>multimedia/imagenes/estaciones_metro/todas/isabellacatolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabel la catolica.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
-    <file>multimedia/imagenes/estaciones_metro/todas/pinosuarez.png</file>
-    <file>multimedia/imagenes/estaciones_metro/todas/saltodelagua.png</file>
-    <file>multimedia/imagenes/estaciones_metro/todas/sanlazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pino suarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/salto del agua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/san lazaro.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
-  </qresource>
-  <qresource prefix="autor">
-    <file>multimedia/imagenes/autor/roni_code_99.jpg</file>
   </qresource>
   <qresource prefix="iconos_estandar">
     <file>multimedia/imagenes/estandar/config_off.png</file>

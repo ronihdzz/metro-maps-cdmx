@@ -814,7 +814,7 @@ margin: 0px;
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/sanlazaro.png);</string>
+            <string notr="true">image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);</string>
            </property>
            <property name="text">
             <string/>
