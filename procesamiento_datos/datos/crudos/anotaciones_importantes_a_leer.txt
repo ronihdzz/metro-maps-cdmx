@@ -1,0 +1,17 @@
+
+
+Fuente de datos de: Latitudes y longitudes del metro
+
+https://datos.cdmx.gob.mx/gl/dataset/lineas-y-estaciones-del-metro/resource/0869e0dd-6876-4446-a199-8f670a359c00
+
+
+Fuente de datos de: Distancias entre cada estación del metro
+
+https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-
+
+https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-/blob/main/183arestasOrigDestPesoVirgulasSemEspacoNaoDirecional.txt
+
+
+El archivo que contiene las distancias entre cada estacion del metro, se le quitaron
+el uso de '/' de forma manual, ya que eran solo poquito los que lo usaban y finalmente
+se guardo ese archivo como 'estaciones_separacion.txt'

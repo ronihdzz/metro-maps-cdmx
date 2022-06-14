@@ -10,7 +10,6 @@ import sys
 ##############################################################
 from .mapa_interactivo import MapaInteractivo 
 from recursos import HuellaAplicacion
-import IMAG_rc
 
 
 

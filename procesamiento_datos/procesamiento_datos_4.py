@@ -24,12 +24,12 @@ import pandas as pd
 #   {
 #       'ricardo flores magon',
 #       'boulevard puerto aereo',
-#       'etiopia/plaza de la transparencia',
+#       'etiopia plaza de la transparencia',
 #       'periferico oriente',
 #       'ecatepec',
 #       'bosques de aragon',
 #       'uam i', 
-#       'viveros/derechos humanos',
+#       'viveros derechos humanos',
 #       'mixiuhca',
 #       'hospital 20 de noviembre',
 #       'la villa-basilica'
@@ -50,11 +50,11 @@ relacion_remplazo_nombres={
     'bosque de aragon':'bosques de aragon',
     'blvd. puerto aereo':'boulevard puerto aereo',
     'hospital 20 de nov.':'hospital 20 de noviembre',
-    'etiopia / plaza de la transpatencia':'etiopia/plaza de la transparencia',
+    'etiopia / plaza de la transpatencia':'etiopia plaza de la transparencia',
     'uam-i':'uam i', 
     'r. flores magon':'ricardo flores magon',
     'periferico ote':'periferico oriente',
-    'viveros':'viveros/derechos humanos',
+    'viveros':'viveros derechos humanos',
     'la villa - basilica':'la villa-basilica',
     'mixhuca':'mixiuhca'
 }

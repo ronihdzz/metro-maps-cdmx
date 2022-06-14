@@ -52,13 +52,13 @@ Juárez,Balderas,659
 Balderas,Niños Héroes,665
 Niños Héroes,Hospital General,559
 Hospital General,Centro Médico,653
-Centro Médico,Etiopía/Plaza de la Transparencia,1119
-Etiopía/Plaza de la Transparencia,Eugenia,950
+Centro Médico,Etiopía Plaza de la Transparencia,1119
+Etiopía Plaza de la Transparencia,Eugenia,950
 Eugenia,División del Norte,715
 División del Norte,Zapata,794
 Zapata,Coyoacán,1153
-Coyoacán,Viveros/Derechos Humanos,908
-Viveros/Derechos Humanos,Miguel Ángel de Quevedo,824
+Coyoacán,Viveros Derechos Humanos,908
+Viveros Derechos Humanos,Miguel Ángel de Quevedo,824
 Miguel Ángel de Quevedo,Copilco,1295
 Copilco,Universidad,1306
 Santa Anita,Jamaica,758
@@ -235,13 +235,13 @@ Balderas,Juárez,659
 Niños Héroes,Balderas,665
 Hospital General,Niños Héroes,559
 Centro Médico,Hospital General,653
-Etiopía/Plaza de la Transparencia,Centro Médico,1119
-Eugenia,Etiopía/Plaza de la Transparencia,950
+Etiopía Plaza de la Transparencia,Centro Médico,1119
+Eugenia,Etiopía Plaza de la Transparencia,950
 División del Norte,Eugenia,715
 Zapata,División del Norte,794
 Coyoacán,Zapata,1153
-Viveros/Derechos Humanos,Coyoacán,908
-Miguel Ángel de Quevedo,Viveros/Derechos Humanos,824
+Viveros Derechos Humanos,Coyoacán,908
+Miguel Ángel de Quevedo,Viveros Derechos Humanos,824
 Copilco,Miguel Ángel de Quevedo,1295
 Universidad,Copilco,1306
 Jamaica,Santa Anita,758
