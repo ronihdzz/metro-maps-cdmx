@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="estaciones_metro">
+    <file>multimedia/imagenes/estaciones_metro/todas/balbuena.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/balderas.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/boulevard.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/candelaria.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/chapultepec.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/cuauhtemoc.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/gomezfarias.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/insurgentes.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/isabellacatolica.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/juanacatlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/merced.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/moctezuma.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/observatorio.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pantitlan.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/pinosuarez.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/saltodelagua.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sanlazaro.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/sevilla.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/tacubaya.png</file>
+    <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
+  </qresource>
+  <qresource prefix="autor">
+    <file>multimedia/imagenes/autor/roni_code_99.jpg</file>
+  </qresource>
+  <qresource prefix="iconos_estandar">
+    <file>multimedia/imagenes/estandar/config_off.png</file>
+    <file>multimedia/imagenes/estandar/config_on.png</file>
+    <file>multimedia/imagenes/estandar/foco7_cian.png</file>
+    <file>multimedia/imagenes/estandar/github.png</file>
+    <file>multimedia/imagenes/estandar/gmail.png</file>
+    <file>multimedia/imagenes/estandar/info_off.png</file>
+    <file>multimedia/imagenes/estandar/info_on.png</file>
+    <file>multimedia/imagenes/estandar/likedin.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,11 @@
+matplotlib
+pandas
+pyqt5
+pyqt5-tools
+networkx
+openpyxl
+unidecode  # para quitar acentos a una palabra
+pygame # de dudar
+mutagen # de dudar
+
+

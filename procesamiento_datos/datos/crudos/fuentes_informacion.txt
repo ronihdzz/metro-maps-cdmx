@@ -1,0 +1,11 @@
+Latitudes y longitudes del metro
+
+https://datos.cdmx.gob.mx/gl/dataset/lineas-y-estaciones-del-metro/resource/0869e0dd-6876-4446-a199-8f670a359c00
+
+
+Distancias entre cada estación del metro
+
+https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-
+
+https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-/blob/main/183arestasOrigDestPesoVirgulasSemEspacoNaoDirecional.txt
+
