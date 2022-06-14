@@ -381,7 +381,7 @@ class Ui_Form(object):
         self.bel_estadoVenti.setMinimumSize(QtCore.QSize(63, 63))
         self.bel_estadoVenti.setMaximumSize(QtCore.QSize(150, 150))
         self.bel_estadoVenti.setBaseSize(QtCore.QSize(63, 63))
-        self.bel_estadoVenti.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/sanlazaro.png);")
+        self.bel_estadoVenti.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);")
         self.bel_estadoVenti.setText("")
         self.bel_estadoVenti.setObjectName("bel_estadoVenti")
         self.verticalLayout_8.addWidget(self.bel_estadoVenti)
@@ -412,13 +412,3 @@ class Ui_Form(object):
         self.label_10.setText(_translate("Form", "Sin conexion"))
         self.btn_buscar.setText(_translate("Form", "OBTENER RUTA"))
 import images_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Form = QtWidgets.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
-    sys.exit(app.exec_())
