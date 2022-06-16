@@ -18,7 +18,7 @@ import pandas as pd
 from GUI.DISENO.main_dise import Ui_Form
 from recursos import HuellaAplicacion,App_Principal
 from GUI.LOGICA.mapa_interactivo_completo import MapaInteractivoCompleto
-
+from GUI.LOGICA import cliente_metro
 
 from servidor_networkx.servidor_red_metro import Servidor
 
@@ -127,7 +127,8 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
             ventanaDialogo.exec_()
             if ventanaDialogo.clickedButton()  ==  btn_yes:
 
-                respuesta=SERVIDOR.get_ruta_mas_cercana(origen=nombre_origen,destino=nombre_destino)
+                #respuesta=SERVIDOR.get_ruta_mas_cercana(origen=nombre_origen,destino=nombre_destino)
+                respuesta=cliente_metro.consultar_servidor(origen=nombre_origen,destino=nombre_destino)
                 ruta_seguir,no_estaciones_ruta,distancia_recorrer=respuesta
                 
                 ruta_seguir_str="\n -".join(['']+ruta_seguir)
