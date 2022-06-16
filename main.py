@@ -20,7 +20,6 @@ from recursos import HuellaAplicacion,App_Principal
 from GUI.LOGICA.mapa_interactivo_completo import MapaInteractivoCompleto
 from GUI.LOGICA import cliente_metro
 
-from servidor_networkx.servidor_red_metro import Servidor
 
 
 file_separacion_estaciones="procesamiento_datos\datos\procesados\estaciones_separacion.xlsx"
@@ -30,10 +29,6 @@ RUTA_IMGENES_METRO="estaciones_metro/multimedia/imagenes/estaciones_metro/todas/
 
 
 #self.bel_estadoVenti.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/sanlazaro.png);")
-
-
-
-SERVIDOR=Servidor(file_separacion_estaciones=file_separacion_estaciones)
 
 
 class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
@@ -54,9 +49,9 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
         self.setGeometry(60, 60,ANCHO_PANTALLA,ALTO_PANTALLA)
 
         self.area=MapaInteractivoCompleto()
-        self.stack_notas.addWidget(self.area)
+        self.stack_panel_metro.addWidget(self.area)
         
-        self.stack_notas.setSizePolicy(
+        self.stack_panel_metro.setSizePolicy(
             QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding
         )
 
@@ -93,11 +88,17 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
 
         # botones de accion...
         self.btn_buscar.clicked.connect(self.obtener_ruta_mas_cercana)
+        self.area.panel.senal_punto_clic.connect(self.mostrar_estacion_clic)
 
 
 
         self.show()
     
+    def mostrar_estacion_clic(self,nombre_estacion):
+        print(nombre_estacion)
+    
+        imagen=RUTA_IMGENES_METRO+nombre_estacion+".png"
+        self.bel_estacion_clic.setStyleSheet(f"image: url(:/{imagen});")
 
     def obtener_ruta_mas_cercana(self):
         if self.indice_estacion_destino>0 and self.indice_estacion_origen>0:
@@ -142,6 +143,15 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
                         "La ruta a seguir es la siguiente: \n"
                         f"{ruta_seguir_str}" 
                         )
+                
+                # cargando ruta en combo box
+                self.cmb__box_ruta.clear()
+                self.cmb__box_ruta.addItems(ruta_seguir)
+
+                self.bel_dst_ruta.setText(str(distancia_recorrer))
+                self.bel_no_estaciones.setText( str(no_estaciones_ruta) )
+
+
                         
                 ventanaDialogo.setText(mensaje)
                 ventanaDialogo.setStandardButtons(QMessageBox.Ok)
@@ -177,7 +187,7 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
 
             nombre_estacion=self.lista_nombres_estaciones[index]
             imagen=RUTA_IMGENES_METRO+nombre_estacion+".png"
-            self.bel_estadoFoco.setStyleSheet(f"image: url(:/{imagen});")
+            self.bel_estacion_origen.setStyleSheet(f"image: url(:/{imagen});")
             print("Imagen: ",imagen)
 
 
@@ -200,14 +210,13 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
             btn_ok.setText('Entendido')
             ventanaDialogo.exec_()
 
-
             self.cmb_box_destino.removeItem(index)
         elif self.indice_estacion_destino!=index:
             self.indice_estacion_destino=index
             print("Estacion del metro elegida: ",self.lista_nombres_estaciones[index])
             nombre_estacion=self.lista_nombres_estaciones[index]
             imagen=RUTA_IMGENES_METRO+nombre_estacion+".png"
-            self.bel_estadoVenti.setStyleSheet(f"image: url(:/{imagen});")
+            self.bel_estacion_destino.setStyleSheet(f"image: url(:/{imagen});")
             print("Imagen: ",imagen)
 
 
@@ -221,28 +230,11 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
         la informacion mencionada anteriormente
         '''
 
-
         # columnas: name        lat      lng
         tabla_ubicaciones=pd.read_excel(self.file_ubicaciones)
-
         lista_nombres_estaciones=[nombre for nombre in tabla_ubicaciones.nombre]
-
         return lista_nombres_estaciones
     
-
-    def resizeEvent(self, event):
-        '''
-        Cada vez que se detecta un cambio en el tamaño del programa, se actualizaran los tamaños
-        que le pertenecen al widget que muestra las alarmas y al widget que muestra los deberes,
-        con la finalidad de que ambos conserven el mismo tamaño y asi NINGUNO sea mas grande que
-        otro y crezcan de igual forma.
-        '''
-
-        print("Window has been resized")
-        print(self.width(),self.height())
-        #QtWidgets.QWidget.resizeEvent(self, event)
-
-
 
     def closeEvent(self,event):
         '''

@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1070, 554)
+        Form.resize(943, 527)
         Form.setMinimumSize(QtCore.QSize(940, 470))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -29,7 +29,7 @@ class Ui_Form(object):
         Form.setStyleSheet("#Form{    \n"
 "border:1px solid white;\n"
 "background-color: #193b58;\n"
-"padding:0px\n"
+"padding:0;\n"
 "}\n"
 "\n"
 "")
@@ -37,97 +37,23 @@ class Ui_Form(object):
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout_3.setContentsMargins(-1, 0, -1, 0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.widget = QtWidgets.QWidget(Form)
-        self.widget.setEnabled(True)
-        self.widget.setMinimumSize(QtCore.QSize(350, 420))
-        self.widget.setMaximumSize(QtCore.QSize(300, 16777215))
-        self.widget.setObjectName("widget")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
-        self.verticalLayout.setContentsMargins(-1, -1, 9, -1)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.label_39 = QtWidgets.QLabel(self.widget)
-        self.label_39.setMinimumSize(QtCore.QSize(100, 10))
-        self.label_39.setText("")
-        self.label_39.setObjectName("label_39")
-        self.verticalLayout.addWidget(self.label_39)
-        self.timeEdit_tiempo = QtWidgets.QTimeEdit(self.widget)
-        self.timeEdit_tiempo.setMinimumSize(QtCore.QSize(228, 94))
-        self.timeEdit_tiempo.setMaximumSize(QtCore.QSize(600, 100))
-        self.timeEdit_tiempo.setSizeIncrement(QtCore.QSize(0, 0))
-        self.timeEdit_tiempo.setBaseSize(QtCore.QSize(225, 90))
-        font = QtGui.QFont()
-        font.setFamily("LucidaGrande")
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.timeEdit_tiempo.setFont(font)
-        self.timeEdit_tiempo.setStyleSheet("QTimeEdit{ \n"
-"  opacity: 0.53;\n"
-"  font-family: LucidaGrande;\n"
-"  font-size: 58px;\n"
-"   padding:0px;\n"
-"  color: #979797;\n"
-"  border: 1px solid  #193b58;\n"
-"background-color: #193b58;\n"
-"}\n"
-"\n"
-"")
-        self.timeEdit_tiempo.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Mexico))
-        self.timeEdit_tiempo.setWrapping(False)
-        self.timeEdit_tiempo.setAlignment(QtCore.Qt.AlignCenter)
-        self.timeEdit_tiempo.setReadOnly(True)
-        self.timeEdit_tiempo.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
-        self.timeEdit_tiempo.setAccelerated(False)
-        self.timeEdit_tiempo.setCorrectionMode(QtWidgets.QAbstractSpinBox.CorrectToPreviousValue)
-        self.timeEdit_tiempo.setKeyboardTracking(True)
-        self.timeEdit_tiempo.setProperty("showGroupSeparator", False)
-        self.timeEdit_tiempo.setDateTime(QtCore.QDateTime(QtCore.QDate(2000, 1, 1), QtCore.QTime(21, 0, 0)))
-        self.timeEdit_tiempo.setCurrentSection(QtWidgets.QDateTimeEdit.HourSection)
-        self.timeEdit_tiempo.setCalendarPopup(False)
-        self.timeEdit_tiempo.setTime(QtCore.QTime(21, 0, 0))
-        self.timeEdit_tiempo.setObjectName("timeEdit_tiempo")
-        self.verticalLayout.addWidget(self.timeEdit_tiempo)
-        self.dateEdit_fecha = QtWidgets.QDateEdit(self.widget)
-        self.dateEdit_fecha.setMinimumSize(QtCore.QSize(200, 40))
-        self.dateEdit_fecha.setMaximumSize(QtCore.QSize(600, 60))
-        self.dateEdit_fecha.setSizeIncrement(QtCore.QSize(0, 0))
-        self.dateEdit_fecha.setBaseSize(QtCore.QSize(200, 40))
-        font = QtGui.QFont()
-        font.setFamily("LucidaGrande")
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.dateEdit_fecha.setFont(font)
-        self.dateEdit_fecha.setStyleSheet("  font-family: LucidaGrande;\n"
-"  font-size: 18px;\n"
-"  font-weight: normal;\n"
-"  font-stretch: normal;\n"
-"  font-style: normal;\n"
-"  line-height: normal;\n"
-"  letter-spacing: normal;\n"
-"  color: #ffffff;\n"
-"  border: 1px solid  #193b58; \n"
-"background-color: #193b58;\n"
-" /*font-weight: bold;*/")
-        self.dateEdit_fecha.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Mexico))
-        self.dateEdit_fecha.setAlignment(QtCore.Qt.AlignCenter)
-        self.dateEdit_fecha.setReadOnly(True)
-        self.dateEdit_fecha.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
-        self.dateEdit_fecha.setProperty("showGroupSeparator", False)
-        self.dateEdit_fecha.setDateTime(QtCore.QDateTime(QtCore.QDate(2000, 9, 13), QtCore.QTime(0, 0, 0)))
-        self.dateEdit_fecha.setCalendarPopup(False)
-        self.dateEdit_fecha.setObjectName("dateEdit_fecha")
-        self.verticalLayout.addWidget(self.dateEdit_fecha)
-        self.label_41 = QtWidgets.QLabel(self.widget)
-        self.label_41.setMinimumSize(QtCore.QSize(100, 10))
-        self.label_41.setText("")
-        self.label_41.setObjectName("label_41")
-        self.verticalLayout.addWidget(self.label_41)
-        self.horizontalLayout_14 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
-        self.btn_info = QtWidgets.QPushButton(self.widget)
+        self.widget_alarmasNotas = QtWidgets.QWidget(Form)
+        self.widget_alarmasNotas.setMinimumSize(QtCore.QSize(410, 410))
+        self.widget_alarmasNotas.setStyleSheet("#widget_alarmasNotas{\n"
+"margin:0px;\n"
+"background-color:#d8d8d8;\n"
+"padding: 50px 50px 50px 50px;\n"
+"padding: 0;\n"
+"}")
+        self.widget_alarmasNotas.setObjectName("widget_alarmasNotas")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget_alarmasNotas)
+        self.verticalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetMaximumSize)
+        self.verticalLayout_2.setContentsMargins(26, 26, 26, 26)
+        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.btn_info = QtWidgets.QPushButton(self.widget_alarmasNotas)
         self.btn_info.setMinimumSize(QtCore.QSize(25, 25))
         self.btn_info.setMaximumSize(QtCore.QSize(35, 35))
         self.btn_info.setSizeIncrement(QtCore.QSize(0, 0))
@@ -145,22 +71,30 @@ class Ui_Form(object):
 "}")
         self.btn_info.setText("")
         self.btn_info.setObjectName("btn_info")
-        self.horizontalLayout_14.addWidget(self.btn_info)
-        self.label_18 = QtWidgets.QLabel(self.widget)
-        self.label_18.setText("")
-        self.label_18.setObjectName("label_18")
-        self.horizontalLayout_14.addWidget(self.label_18)
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
-        self.rb_controlManual = QtWidgets.QRadioButton(self.widget)
-        self.rb_controlManual.setMinimumSize(QtCore.QSize(20, 20))
-        self.rb_controlManual.setMaximumSize(QtCore.QSize(30, 30))
-        self.rb_controlManual.setSizeIncrement(QtCore.QSize(0, 0))
-        self.rb_controlManual.setBaseSize(QtCore.QSize(20, 20))
+        self.horizontalLayout_15.addWidget(self.btn_info)
+        self.bel_estacion_clic = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.bel_estacion_clic.setMinimumSize(QtCore.QSize(63, 63))
+        self.bel_estacion_clic.setMaximumSize(QtCore.QSize(150, 150))
+        self.bel_estacion_clic.setBaseSize(QtCore.QSize(63, 63))
+        self.bel_estacion_clic.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);")
+        self.bel_estacion_clic.setText("")
+        self.bel_estacion_clic.setObjectName("bel_estacion_clic")
+        self.horizontalLayout_15.addWidget(self.bel_estacion_clic)
+        self.label_19 = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.label_19.setText("")
+        self.label_19.setObjectName("label_19")
+        self.horizontalLayout_15.addWidget(self.label_19)
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.rb_con_sonido = QtWidgets.QRadioButton(self.widget_alarmasNotas)
+        self.rb_con_sonido.setMinimumSize(QtCore.QSize(20, 20))
+        self.rb_con_sonido.setMaximumSize(QtCore.QSize(30, 30))
+        self.rb_con_sonido.setSizeIncrement(QtCore.QSize(0, 0))
+        self.rb_con_sonido.setBaseSize(QtCore.QSize(20, 20))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.rb_controlManual.setFont(font)
-        self.rb_controlManual.setStyleSheet("QRadioButton {\n"
+        self.rb_con_sonido.setFont(font)
+        self.rb_con_sonido.setStyleSheet("QRadioButton {\n"
 "\n"
 "}\n"
 "\n"
@@ -168,57 +102,58 @@ class Ui_Form(object):
 "    width:                  15px;\n"
 "    height:                 15px;\n"
 "    border-radius:          9px;\n"
+"    border:                 2px solid black;\n"
 "}\n"
 "\n"
 "QRadioButton::indicator:checked {\n"
-"    background-color:        #8c2b2b; \n"
-"    border:                 2px solid white;\n"
+"    background-color:        #193b58;\n"
+"    border:                 2px solid black;\n"
 "}\n"
 "\n"
 "QRadioButton::indicator:unchecked {\n"
-"    background-color:       #193b58;\n"
-"    border:                 2px solid white;\n"
+"    background-color:       #d8d8d8;\n"
+"    border:                  2px solid black;\n"
 "}\n"
 "")
-        self.rb_controlManual.setText("")
-        self.rb_controlManual.setObjectName("rb_controlManual")
-        self.verticalLayout_5.addWidget(self.rb_controlManual, 0, QtCore.Qt.AlignHCenter)
-        self.label_6 = QtWidgets.QLabel(self.widget)
-        self.label_6.setMinimumSize(QtCore.QSize(100, 20))
-        self.label_6.setMaximumSize(QtCore.QSize(70, 20))
+        self.rb_con_sonido.setText("")
+        self.rb_con_sonido.setObjectName("rb_con_sonido")
+        self.verticalLayout_7.addWidget(self.rb_con_sonido, 0, QtCore.Qt.AlignHCenter)
+        self.label_7 = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.label_7.setMinimumSize(QtCore.QSize(100, 20))
+        self.label_7.setMaximumSize(QtCore.QSize(70, 20))
         font = QtGui.QFont()
         font.setFamily("LucidaGrande")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.label_6.setFont(font)
-        self.label_6.setStyleSheet("  font-family: LucidaGrande;\n"
+        self.label_7.setFont(font)
+        self.label_7.setStyleSheet("  font-family: LucidaGrande;\n"
 "  font-size: 16px;\n"
 "  font-weight: normal;\n"
 "  font-stretch: normal;\n"
 "  font-style: normal;\n"
 "  line-height: normal;\n"
 "  letter-spacing: normal;\n"
-"  color: #ffffff;\n"
-"  border: 1px solid  #193b58; \n"
-"background-color: #193b58;\n"
+"  color: black;\n"
+"  /*border: 1px solid  #193b58; */\n"
+"background-color: #d8d8d8;\n"
 " /*font-weight: bold;*/")
-        self.label_6.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_6.setObjectName("label_6")
-        self.verticalLayout_5.addWidget(self.label_6)
-        self.horizontalLayout_14.addLayout(self.verticalLayout_5)
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.rb_controlAutomatico = QtWidgets.QRadioButton(self.widget)
-        self.rb_controlAutomatico.setMinimumSize(QtCore.QSize(20, 20))
-        self.rb_controlAutomatico.setMaximumSize(QtCore.QSize(30, 30))
-        self.rb_controlAutomatico.setSizeIncrement(QtCore.QSize(0, 0))
-        self.rb_controlAutomatico.setBaseSize(QtCore.QSize(20, 20))
+        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_7.setObjectName("label_7")
+        self.verticalLayout_7.addWidget(self.label_7)
+        self.horizontalLayout_15.addLayout(self.verticalLayout_7)
+        self.verticalLayout_9 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_9.setObjectName("verticalLayout_9")
+        self.rb_sin_sonido = QtWidgets.QRadioButton(self.widget_alarmasNotas)
+        self.rb_sin_sonido.setMinimumSize(QtCore.QSize(20, 20))
+        self.rb_sin_sonido.setMaximumSize(QtCore.QSize(30, 30))
+        self.rb_sin_sonido.setSizeIncrement(QtCore.QSize(0, 0))
+        self.rb_sin_sonido.setBaseSize(QtCore.QSize(20, 20))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.rb_controlAutomatico.setFont(font)
-        self.rb_controlAutomatico.setStyleSheet("QRadioButton {\n"
+        self.rb_sin_sonido.setFont(font)
+        self.rb_sin_sonido.setStyleSheet("QRadioButton {\n"
 "\n"
 "}\n"
 "\n"
@@ -226,71 +161,100 @@ class Ui_Form(object):
 "    width:                  15px;\n"
 "    height:                 15px;\n"
 "    border-radius:          9px;\n"
+"    border:                 2px solid black;\n"
 "}\n"
 "\n"
 "QRadioButton::indicator:checked {\n"
-"    background-color:        #8c2b2b; \n"
-"    border:                 2px solid white;\n"
+"    background-color:        #193b58;\n"
+"    border:                 2px solid black;\n"
 "}\n"
 "\n"
 "QRadioButton::indicator:unchecked {\n"
-"    background-color:       #193b58; ;\n"
-"    border:                 2px solid white;\n"
-"}\n"
-"")
-        self.rb_controlAutomatico.setText("")
-        self.rb_controlAutomatico.setChecked(True)
-        self.rb_controlAutomatico.setObjectName("rb_controlAutomatico")
-        self.verticalLayout_6.addWidget(self.rb_controlAutomatico, 0, QtCore.Qt.AlignHCenter)
-        self.label_10 = QtWidgets.QLabel(self.widget)
-        self.label_10.setMinimumSize(QtCore.QSize(100, 20))
-        self.label_10.setMaximumSize(QtCore.QSize(70, 20))
+"    background-color:       #d8d8d8;\n"
+"    border:                  2px solid black;\n"
+"}")
+        self.rb_sin_sonido.setText("")
+        self.rb_sin_sonido.setChecked(True)
+        self.rb_sin_sonido.setObjectName("rb_sin_sonido")
+        self.verticalLayout_9.addWidget(self.rb_sin_sonido, 0, QtCore.Qt.AlignHCenter)
+        self.label_11 = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.label_11.setMinimumSize(QtCore.QSize(100, 20))
+        self.label_11.setMaximumSize(QtCore.QSize(70, 20))
         font = QtGui.QFont()
         font.setFamily("LucidaGrande")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.label_10.setFont(font)
-        self.label_10.setStyleSheet("  font-family: LucidaGrande;\n"
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet("  font-family: LucidaGrande;\n"
 "  font-size: 16px;\n"
 "  font-weight: normal;\n"
 "  font-stretch: normal;\n"
 "  font-style: normal;\n"
 "  line-height: normal;\n"
 "  letter-spacing: normal;\n"
-"  color: #ffffff;\n"
-"  border: 1px solid  #193b58; \n"
-"background-color: #193b58;")
+"  color: black;\n"
+"  /*border: 1px solid  #193b58; */\n"
+"background-color: #d8d8d8;\n"
+" /*font-weight: bold;*/")
+        self.label_11.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_11.setObjectName("label_11")
+        self.verticalLayout_9.addWidget(self.label_11)
+        self.horizontalLayout_15.addLayout(self.verticalLayout_9)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_15)
+        self.label_3 = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.label_3.setMinimumSize(QtCore.QSize(181, 41))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Demi")
+        font.setPointSize(20)
+        self.label_3.setFont(font)
+        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout_2.addWidget(self.label_3)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setContentsMargins(-1, 0, -1, 5)
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.label_9 = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.label_9.setObjectName("label_9")
+        self.horizontalLayout_5.addWidget(self.label_9)
+        self.cmb__box_ruta = QtWidgets.QComboBox(self.widget_alarmasNotas)
+        self.cmb__box_ruta.setObjectName("cmb__box_ruta")
+        self.horizontalLayout_5.addWidget(self.cmb__box_ruta)
+        self.label_10 = QtWidgets.QLabel(self.widget_alarmasNotas)
         self.label_10.setAlignment(QtCore.Qt.AlignCenter)
         self.label_10.setObjectName("label_10")
-        self.verticalLayout_6.addWidget(self.label_10)
-        self.horizontalLayout_14.addLayout(self.verticalLayout_6)
-        self.verticalLayout.addLayout(self.horizontalLayout_14)
-        self.horizontalLayout_3.addWidget(self.widget)
-        self.widget_alarmasNotas = QtWidgets.QWidget(Form)
-        self.widget_alarmasNotas.setMinimumSize(QtCore.QSize(410, 410))
-        self.widget_alarmasNotas.setStyleSheet("#widget_alarmasNotas{\n"
-"margin:0px;\n"
-"background-color:#d8d8d8;\n"
-"padding: 50px 50px 50px 50px;\n"
-"}")
-        self.widget_alarmasNotas.setObjectName("widget_alarmasNotas")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget_alarmasNotas)
-        self.verticalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetMaximumSize)
-        self.verticalLayout_2.setContentsMargins(26, 26, 26, 26)
-        self.verticalLayout_2.setSpacing(0)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.stack_notas = QtWidgets.QStackedWidget(self.widget_alarmasNotas)
-        self.stack_notas.setMinimumSize(QtCore.QSize(380, 160))
-        self.stack_notas.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.stack_notas.setBaseSize(QtCore.QSize(380, 160))
-        self.stack_notas.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
-        self.stack_notas.setToolTipDuration(0)
-        self.stack_notas.setStyleSheet("QStackedWidget#stack_notas{\n"
+        self.horizontalLayout_5.addWidget(self.label_10)
+        self.bel_no_estaciones = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.bel_no_estaciones.setAlignment(QtCore.Qt.AlignCenter)
+        self.bel_no_estaciones.setObjectName("bel_no_estaciones")
+        self.horizontalLayout_5.addWidget(self.bel_no_estaciones)
+        self.label_13 = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.label_13.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_13.setObjectName("label_13")
+        self.horizontalLayout_5.addWidget(self.label_13)
+        self.bel_dst_ruta = QtWidgets.QLabel(self.widget_alarmasNotas)
+        self.bel_dst_ruta.setAlignment(QtCore.Qt.AlignCenter)
+        self.bel_dst_ruta.setObjectName("bel_dst_ruta")
+        self.horizontalLayout_5.addWidget(self.bel_dst_ruta)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_5)
+        self.line = QtWidgets.QFrame(self.widget_alarmasNotas)
+        self.line.setLineWidth(1)
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.verticalLayout_2.addWidget(self.line)
+        self.stack_panel_metro = QtWidgets.QStackedWidget(self.widget_alarmasNotas)
+        self.stack_panel_metro.setMinimumSize(QtCore.QSize(380, 160))
+        self.stack_panel_metro.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.stack_panel_metro.setBaseSize(QtCore.QSize(380, 160))
+        self.stack_panel_metro.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.stack_panel_metro.setToolTipDuration(0)
+        self.stack_panel_metro.setStyleSheet("QStackedWidget#stack_notas{\n"
 "padding:0px;\n"
 "background-color: #d8d8d8;\n"
 "/*border-radius: 20%;*/\n"
+"margin-top: 5px;\n"
 "margin: 0px;\n"
 "}\n"
 "\n"
@@ -300,6 +264,7 @@ class Ui_Form(object):
 "margin:0px;\n"
 "padding:0px;\n"
 "background-color: #d8d8d8;\n"
+"margin-top: 5px;\n"
 "}\n"
 "\n"
 "\n"
@@ -307,6 +272,7 @@ class Ui_Form(object):
 "background-color: #d8d8d8;\n"
 "/*border-radius: 20%*/;\n"
 "margin: 0px;\n"
+"margin-top: 5px;\n"
 "}\n"
 "\n"
 "\n"
@@ -314,10 +280,10 @@ class Ui_Form(object):
 "\n"
 "\n"
 "")
-        self.stack_notas.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.stack_notas.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.stack_notas.setObjectName("stack_notas")
-        self.verticalLayout_2.addWidget(self.stack_notas)
+        self.stack_panel_metro.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.stack_panel_metro.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.stack_panel_metro.setObjectName("stack_panel_metro")
+        self.verticalLayout_2.addWidget(self.stack_panel_metro)
         self.horizontalLayout_3.addWidget(self.widget_alarmasNotas)
         self.widget_2 = QtWidgets.QWidget(Form)
         self.widget_2.setMinimumSize(QtCore.QSize(130, 0))
@@ -333,15 +299,15 @@ class Ui_Form(object):
         self.widget_3.setObjectName("widget_3")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.widget_3)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.bel_estadoFoco = QtWidgets.QLabel(self.widget_3)
-        self.bel_estadoFoco.setMinimumSize(QtCore.QSize(70, 60))
-        self.bel_estadoFoco.setMaximumSize(QtCore.QSize(160, 150))
-        self.bel_estadoFoco.setSizeIncrement(QtCore.QSize(0, 0))
-        self.bel_estadoFoco.setBaseSize(QtCore.QSize(60, 50))
-        self.bel_estadoFoco.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/observatorio.png);")
-        self.bel_estadoFoco.setText("")
-        self.bel_estadoFoco.setObjectName("bel_estadoFoco")
-        self.verticalLayout_3.addWidget(self.bel_estadoFoco)
+        self.bel_estacion_origen = QtWidgets.QLabel(self.widget_3)
+        self.bel_estacion_origen.setMinimumSize(QtCore.QSize(70, 60))
+        self.bel_estacion_origen.setMaximumSize(QtCore.QSize(160, 150))
+        self.bel_estacion_origen.setSizeIncrement(QtCore.QSize(0, 0))
+        self.bel_estacion_origen.setBaseSize(QtCore.QSize(60, 50))
+        self.bel_estacion_origen.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/observatorio.png);")
+        self.bel_estacion_origen.setText("")
+        self.bel_estacion_origen.setObjectName("bel_estacion_origen")
+        self.verticalLayout_3.addWidget(self.bel_estacion_origen)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.cmb_box_origen = QtWidgets.QComboBox(self.widget_3)
@@ -377,14 +343,14 @@ class Ui_Form(object):
         self.widget_5.setObjectName("widget_5")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.widget_5)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
-        self.bel_estadoVenti = QtWidgets.QLabel(self.widget_5)
-        self.bel_estadoVenti.setMinimumSize(QtCore.QSize(63, 63))
-        self.bel_estadoVenti.setMaximumSize(QtCore.QSize(150, 150))
-        self.bel_estadoVenti.setBaseSize(QtCore.QSize(63, 63))
-        self.bel_estadoVenti.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);")
-        self.bel_estadoVenti.setText("")
-        self.bel_estadoVenti.setObjectName("bel_estadoVenti")
-        self.verticalLayout_8.addWidget(self.bel_estadoVenti)
+        self.bel_estacion_destino = QtWidgets.QLabel(self.widget_5)
+        self.bel_estacion_destino.setMinimumSize(QtCore.QSize(63, 63))
+        self.bel_estacion_destino.setMaximumSize(QtCore.QSize(150, 150))
+        self.bel_estacion_destino.setBaseSize(QtCore.QSize(63, 63))
+        self.bel_estacion_destino.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);")
+        self.bel_estacion_destino.setText("")
+        self.bel_estacion_destino.setObjectName("bel_estacion_destino")
+        self.verticalLayout_8.addWidget(self.bel_estacion_destino)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.cmb_box_destino = QtWidgets.QComboBox(self.widget_5)
@@ -400,15 +366,20 @@ class Ui_Form(object):
         self.horizontalLayout_3.addWidget(self.widget_2)
 
         self.retranslateUi(Form)
-        self.stack_notas.setCurrentIndex(-1)
+        self.stack_panel_metro.setCurrentIndex(-1)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "RoniHernandez99/IoT_domotica"))
-        self.timeEdit_tiempo.setDisplayFormat(_translate("Form", "hh:mm a"))
-        self.dateEdit_fecha.setDisplayFormat(_translate("Form", "dddd dd \'de\' MMMM "))
-        self.label_6.setText(_translate("Form", "Conexion"))
-        self.label_10.setText(_translate("Form", "Sin conexion"))
+        self.label_7.setText(_translate("Form", "Con sonido"))
+        self.label_11.setText(_translate("Form", "Sin sonido"))
+        self.label_3.setText(_translate("Form", "Red del metro"))
+        self.label_9.setText(_translate("Form", "Ruta a seguir:"))
+        self.label_10.setText(_translate("Form", "No. estaciones:"))
+        self.bel_no_estaciones.setText(_translate("Form", "10"))
+        self.label_13.setText(_translate("Form", "Distancia en\n"
+"metros: "))
+        self.bel_dst_ruta.setText(_translate("Form", "1520"))
         self.btn_buscar.setText(_translate("Form", "OBTENER RUTA"))
 import images_rc

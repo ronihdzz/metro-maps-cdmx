@@ -38,14 +38,7 @@ class Servidor():
         tupla_fragmentada=pickle.dumps(tupla_datos)
         tupla_bytes=bytes(tupla_fragmentada)
 
-        mensaje_status=(
-            "***************************************************************\n"
-            f"Cliente: {addres} solicita saber la mas corta entre las estaciones:\n"
-            f"{origen} y {destino} \n"
-            f"Bytes del mensaje a mandar {len(tupla_bytes)} bytes"
-        )
-
-        print(mensaje_status)
+        print(f"Cliente: {addres} solicita saber la mas corta entre las estaciones:\n")
 
         cliente.send( tupla_bytes )
         cliente.close()

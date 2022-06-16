@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1070</width>
-    <height>554</height>
+    <width>943</width>
+    <height>527</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -34,7 +34,7 @@
    <string notr="true">#Form{    
 border:1px solid white;
 background-color: #193b58;
-padding:0px
+padding:0;
 }
 
 </string>
@@ -50,238 +50,42 @@ padding:0px
     <number>0</number>
    </property>
    <item>
-    <widget class="QWidget" name="widget" native="true">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
+    <widget class="QWidget" name="widget_alarmasNotas" native="true">
      <property name="minimumSize">
       <size>
-       <width>350</width>
-       <height>420</height>
+       <width>410</width>
+       <height>410</height>
       </size>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>300</width>
-       <height>16777215</height>
-      </size>
+     <property name="styleSheet">
+      <string notr="true">#widget_alarmasNotas{
+margin:0px;
+background-color:#d8d8d8;
+padding: 50px 50px 50px 50px;
+padding: 0;
+}</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>26</number>
+      </property>
+      <property name="topMargin">
+       <number>26</number>
+      </property>
       <property name="rightMargin">
-       <number>9</number>
+       <number>26</number>
+      </property>
+      <property name="bottomMargin">
+       <number>26</number>
       </property>
       <item>
-       <widget class="QLabel" name="label_39">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>10</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTimeEdit" name="timeEdit_tiempo">
-        <property name="minimumSize">
-         <size>
-          <width>228</width>
-          <height>94</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>600</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="sizeIncrement">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="baseSize">
-         <size>
-          <width>225</width>
-          <height>90</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>LucidaGrande</family>
-          <pointsize>-1</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QTimeEdit{ 
-  opacity: 0.53;
-  font-family: LucidaGrande;
-  font-size: 58px;
-   padding:0px;
-  color: #979797;
-  border: 1px solid  #193b58;
-background-color: #193b58;
-}
-
-</string>
-        </property>
-        <property name="locale">
-         <locale language="Spanish" country="Mexico"/>
-        </property>
-        <property name="wrapping">
-         <bool>false</bool>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-        <property name="buttonSymbols">
-         <enum>QAbstractSpinBox::NoButtons</enum>
-        </property>
-        <property name="accelerated">
-         <bool>false</bool>
-        </property>
-        <property name="correctionMode">
-         <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
-        </property>
-        <property name="keyboardTracking">
-         <bool>true</bool>
-        </property>
-        <property name="showGroupSeparator" stdset="0">
-         <bool>false</bool>
-        </property>
-        <property name="dateTime">
-         <datetime>
-          <hour>21</hour>
-          <minute>0</minute>
-          <second>0</second>
-          <year>2000</year>
-          <month>1</month>
-          <day>1</day>
-         </datetime>
-        </property>
-        <property name="currentSection">
-         <enum>QDateTimeEdit::HourSection</enum>
-        </property>
-        <property name="displayFormat">
-         <string>hh:mm a</string>
-        </property>
-        <property name="calendarPopup">
-         <bool>false</bool>
-        </property>
-        <property name="time">
-         <time>
-          <hour>21</hour>
-          <minute>0</minute>
-          <second>0</second>
-         </time>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QDateEdit" name="dateEdit_fecha">
-        <property name="minimumSize">
-         <size>
-          <width>200</width>
-          <height>40</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>600</width>
-          <height>60</height>
-         </size>
-        </property>
-        <property name="sizeIncrement">
-         <size>
-          <width>0</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="baseSize">
-         <size>
-          <width>200</width>
-          <height>40</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>LucidaGrande</family>
-          <pointsize>-1</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">  font-family: LucidaGrande;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-  border: 1px solid  #193b58; 
-background-color: #193b58;
- /*font-weight: bold;*/</string>
-        </property>
-        <property name="locale">
-         <locale language="Spanish" country="Mexico"/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-        <property name="buttonSymbols">
-         <enum>QAbstractSpinBox::NoButtons</enum>
-        </property>
-        <property name="showGroupSeparator" stdset="0">
-         <bool>false</bool>
-        </property>
-        <property name="dateTime">
-         <datetime>
-          <hour>0</hour>
-          <minute>0</minute>
-          <second>0</second>
-          <year>2000</year>
-          <month>9</month>
-          <day>13</day>
-         </datetime>
-        </property>
-        <property name="displayFormat">
-         <string>dddd dd 'de' MMMM </string>
-        </property>
-        <property name="calendarPopup">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_41">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>10</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_14">
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
         <item>
          <widget class="QPushButton" name="btn_info">
           <property name="minimumSize">
@@ -327,16 +131,44 @@ border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_off.png);
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_18">
+         <widget class="QLabel" name="bel_estacion_clic">
+          <property name="minimumSize">
+           <size>
+            <width>63</width>
+            <height>63</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>63</width>
+            <height>63</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);</string>
+          </property>
           <property name="text">
            <string/>
           </property>
          </widget>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_5">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
           <item alignment="Qt::AlignHCenter">
-           <widget class="QRadioButton" name="rb_controlManual">
+           <widget class="QRadioButton" name="rb_con_sonido">
             <property name="minimumSize">
              <size>
               <width>20</width>
@@ -375,16 +207,17 @@ QRadioButton::indicator {
     width:                  15px;
     height:                 15px;
     border-radius:          9px;
+	border:                 2px solid black;
 }
 
 QRadioButton::indicator:checked {
-    background-color:        #8c2b2b; 
-    border:                 2px solid white;
+    background-color:        #193b58;
+    border:                 2px solid black;
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       #193b58;
-    border:                 2px solid white;
+    background-color:       #d8d8d8;
+    border:                  2px solid black;
 }
 </string>
             </property>
@@ -394,7 +227,7 @@ QRadioButton::indicator:unchecked {
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_6">
+           <widget class="QLabel" name="label_7">
             <property name="minimumSize">
              <size>
               <width>100</width>
@@ -424,13 +257,13 @@ QRadioButton::indicator:unchecked {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #ffffff;
-  border: 1px solid  #193b58; 
-background-color: #193b58;
+  color: black;
+  /*border: 1px solid  #193b58; */
+background-color: #d8d8d8;
  /*font-weight: bold;*/</string>
             </property>
             <property name="text">
-             <string>Conexion</string>
+             <string>Con sonido</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -440,9 +273,9 @@ background-color: #193b58;
          </layout>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_6">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
           <item alignment="Qt::AlignHCenter">
-           <widget class="QRadioButton" name="rb_controlAutomatico">
+           <widget class="QRadioButton" name="rb_sin_sonido">
             <property name="minimumSize">
              <size>
               <width>20</width>
@@ -481,18 +314,18 @@ QRadioButton::indicator {
     width:                  15px;
     height:                 15px;
     border-radius:          9px;
+	border:                 2px solid black;
 }
 
 QRadioButton::indicator:checked {
-    background-color:        #8c2b2b; 
-    border:                 2px solid white;
+    background-color:        #193b58;
+    border:                 2px solid black;
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       #193b58; ;
-    border:                 2px solid white;
-}
-</string>
+    background-color:       #d8d8d8;
+    border:                  2px solid black;
+}</string>
             </property>
             <property name="text">
              <string/>
@@ -503,7 +336,7 @@ QRadioButton::indicator:unchecked {
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_10">
+           <widget class="QLabel" name="label_11">
             <property name="minimumSize">
              <size>
               <width>100</width>
@@ -533,12 +366,13 @@ QRadioButton::indicator:unchecked {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #ffffff;
-  border: 1px solid  #193b58; 
-background-color: #193b58;</string>
+  color: black;
+  /*border: 1px solid  #193b58; */
+background-color: #d8d8d8;
+ /*font-weight: bold;*/</string>
             </property>
             <property name="text">
-             <string>Sin conexion</string>
+             <string>Sin sonido</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -549,45 +383,101 @@ background-color: #193b58;</string>
         </item>
        </layout>
       </item>
-     </layout>
-    </widget>
-   </item>
-   <item>
-    <widget class="QWidget" name="widget_alarmasNotas" native="true">
-     <property name="minimumSize">
-      <size>
-       <width>410</width>
-       <height>410</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#widget_alarmasNotas{
-margin:0px;
-background-color:#d8d8d8;
-padding: 50px 50px 50px 50px;
-}</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <property name="sizeConstraint">
-       <enum>QLayout::SetMaximumSize</enum>
-      </property>
-      <property name="leftMargin">
-       <number>26</number>
-      </property>
-      <property name="topMargin">
-       <number>26</number>
-      </property>
-      <property name="rightMargin">
-       <number>26</number>
-      </property>
-      <property name="bottomMargin">
-       <number>26</number>
-      </property>
       <item>
-       <widget class="QStackedWidget" name="stack_notas">
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>181</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Red del metro</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Ruta a seguir:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cmb__box_ruta"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>No. estaciones:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bel_no_estaciones">
+          <property name="text">
+           <string>10</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Distancia en
+metros: </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bel_dst_ruta">
+          <property name="text">
+           <string>1520</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stack_panel_metro">
         <property name="minimumSize">
          <size>
           <width>380</width>
@@ -617,6 +507,7 @@ padding: 50px 50px 50px 50px;
 padding:0px;
 background-color: #d8d8d8;
 /*border-radius: 20%;*/
+margin-top: 5px;
 margin: 0px;
 }
 
@@ -626,6 +517,7 @@ background-color: rgb(255, 255, 255);
 margin:0px;
 padding:0px;
 background-color: #d8d8d8;
+margin-top: 5px;
 }
 
 
@@ -633,6 +525,7 @@ background-color: #d8d8d8;
 background-color: #d8d8d8;
 /*border-radius: 20%*/;
 margin: 0px;
+margin-top: 5px;
 }
 
 
@@ -695,7 +588,7 @@ margin: 0px;
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
          <item>
-          <widget class="QLabel" name="bel_estadoFoco">
+          <widget class="QLabel" name="bel_estacion_origen">
            <property name="minimumSize">
             <size>
              <width>70</width>
@@ -794,7 +687,7 @@ margin: 0px;
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_8">
          <item>
-          <widget class="QLabel" name="bel_estadoVenti">
+          <widget class="QLabel" name="bel_estacion_destino">
            <property name="minimumSize">
             <size>
              <width>63</width>

@@ -26,8 +26,8 @@ class MapaInteractivoCompleto(QMainWindow,HuellaAplicacion):
         self.crear_pantallaMostradora()
         
         self.panel=MapaInteractivo(
-                    ancho=1200*1.5,
-                    alto=600*1.5,
+                    ancho=1500*1.5,
+                    alto=700*1.5,
                     margen=20,
                     file_ubicaciones="procesamiento_datos/datos/procesados/estaciones_ubicacion_2.xlsx"
         )
