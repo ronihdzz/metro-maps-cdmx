@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 
+from pickle import MEMOIZE
 import sys
 
 
@@ -10,7 +11,6 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QIcon
 
 
-import datetime
 import os
 import pandas as pd
 
@@ -18,9 +18,10 @@ import pandas as pd
 from GUI.DISENO.main_dise import Ui_Form
 from recursos import HuellaAplicacion,App_Principal
 from GUI.LOGICA.mapa_interactivo_completo import MapaInteractivoCompleto
+from GUI.LOGICA.datosCreador import Dialog_datosCreador
 from GUI.LOGICA import cliente_metro
-
-
+import recursos
+import pygame  
 
 file_separacion_estaciones="procesamiento_datos\datos\procesados\estaciones_separacion.xlsx"
 
@@ -91,6 +92,14 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
         self.area.panel.senal_punto_clic.connect(self.mostrar_estacion_clic)
 
 
+        self.ventana_datos_creador=Dialog_datosCreador()
+        self.btn_info.clicked.connect(lambda : self.ventana_datos_creador.show() )
+
+
+
+        pygame.init()
+
+
 
         self.show()
     
@@ -99,6 +108,18 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
     
         imagen=RUTA_IMGENES_METRO+nombre_estacion+".png"
         self.bel_estacion_clic.setStyleSheet(f"image: url(:/{imagen});")
+
+
+        if self.rb_con_sonido.isChecked():
+            carpeta=recursos.App_Principal.CARPETA_AUDIOS_ESTACIONES
+            sonido=carpeta+nombre_estacion+".mp3"
+
+            pygame.mixer.init() 
+            pygame.mixer.music.set_volume(1)
+            pygame.mixer.music.load( sonido  )
+            pygame.mixer.music.play()   
+
+
 
     def obtener_ruta_mas_cercana(self):
         if self.indice_estacion_destino>0 and self.indice_estacion_origen>0:
@@ -151,8 +172,6 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
                 self.bel_dst_ruta.setText(str(distancia_recorrer))
                 self.bel_no_estaciones.setText( str(no_estaciones_ruta) )
 
-
-                        
                 ventanaDialogo.setText(mensaje)
                 ventanaDialogo.setStandardButtons(QMessageBox.Ok)
                 btn_ok = ventanaDialogo.button(QMessageBox.Ok)
@@ -160,7 +179,104 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
                 ventanaDialogo.exec_()
 
                 self.area.colorear_ruta_seguir(nombre_estaciones=ruta_seguir)
+
+
+                if self.rb_con_sonido.isChecked():
+                    self.reproducir_en_voz_ruta(ruta=ruta_seguir)
+
+    def reproducir_en_voz_ruta(self,ruta):
+        
+        carpeta=recursos.App_Principal.CARPETA_AUDIOS_ESTACIONES
+
+
+        lista_sonidos=[]
+
+
+        lista_sonidos.append( recursos.App_Principal.FRASE_INICIO  )
+
+        #MIXER.init()
+        #MIXER.music.load( recursos.App_Principal.FRASE_INICIO  )
+
+        for n,estacion in enumerate(ruta):
+            sonido=carpeta+estacion+".mp3"
+
+            lista_sonidos.append(sonido)
+            # MIXER.music.load( sonido  )
+
+            if not estacion==ruta[-1]:
+                lista_sonidos.append( recursos.App_Principal.FRASE_INTERMEDIA   )
+                #MIXER.music.load( recursos.App_Principal.FRASE_INTERMEDIA  )
+        
+        self.start_playlist(lista_sonidos)
+
+
+    def insert_into_playlist(self,playlist, music_file):
+        
+        # Adding songs file in our playlist
+        playlist.append(music_file)
+    
+    
+    def start_playlist(self,playList):
+        
+        # Loading first audio file into our player
+        pygame.mixer.music.load(playList[0])
+        
+        # Removing the loaded song from our playlist list
+        playList.pop(0)
+    
+        # Playing our music
+        pygame.mixer.music.play()
+    
+        # Queueing next song into our player
+        pygame.mixer.music.queue(playList[0])
+        playList.pop(0)
+    
+        # setting up an end event which host an event
+        # after the end of every song
+        pygame.mixer.music.set_endevent(pygame.USEREVENT+1)
+    
+        # Playing the songs in the background
+        running = True
+        while running:
+            
+            # checking if any event has been
+            # hosted at time of playing
+            for event in pygame.event.get():
                 
+                # A event will be hosted
+                # after the end of every song
+                if event.type ==  pygame.USEREVENT+1:
+                    print('Song Finished')
+                    
+                    # Checking our playList
+                    # that if any song exist or
+                    # it is empty
+                    if len(playList) > 0:
+                        
+                        # if song available then load it in player
+                        # and remove from the player
+                        pygame.mixer.music.queue(playList[0])
+                        playList.pop(0)
+    
+                # Checking whether the 
+                # player is still playing any song
+                # if yes it will return true and false otherwise
+                if not pygame.mixer.music.get_busy():
+                    print("Playlist completed")
+                    
+                    # When the playlist has
+                    # completed playing successfully
+                    # we'll go out of the
+                    # while-loop by using break
+                    running = False
+                    break
+    
+
+
+
+
+
+
 
     def registrar_origen(self,index):
         if index>=self.no_estaciones:
@@ -262,12 +378,24 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
 
 
 if __name__ == "__main__":        
-    # create pyqt5 app
+
+    #print("Nombre completo del programa que se esta ejecutando: ",sys.argv)
+    direccionTotal=sys.argv[0]
+
+    direccionPartes=os.path.normpath(direccionTotal)
+    direccionPartes=direccionPartes.split(os.sep)
+    ruta_direccionTotal = os.sep.join( direccionPartes[:-1] )
+    if len(direccionPartes)>1:
+        ruta_direccionTotal+=os.sep
+    #print("dirreccionPartes:",direccionPartes)
+    #print("ruta total: ",ruta_direccionTotal)
+    #ubicacionPrograma=direccionTotal[ :direccionTotal.find("mainFast.py") ]
+
+    recursos.App_Principal.actualizarUbicaciones(ubicacion=ruta_direccionTotal)
+
+    # crear aplicacion
     App = QApplication(sys.argv)
-
-    # create the instance of our Window
     window = Proyecto()
-
-    # start the app
+    # iniciado app
     sys.exit(App.exec())
 

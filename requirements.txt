@@ -8,4 +8,6 @@ unidecode  # para quitar acentos a una palabra
 pygame # de dudar
 mutagen # de dudar
 
+pip install gTTS  # para convertir texto a voz 
+
 

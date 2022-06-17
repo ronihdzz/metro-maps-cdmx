@@ -177,4 +177,7 @@
     <file>multimedia/imagenes/estaciones_metro/todas/zaragoza.png</file>
     <file>multimedia/imagenes/estaciones_metro/todas/zocalo.png</file>
   </qresource>
+  <qresource prefix="app">
+    <file>multimedia/imagenes/app/icono.png</file>
+  </qresource>
 </RCC>

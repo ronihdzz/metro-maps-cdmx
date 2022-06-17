@@ -1,14 +1,11 @@
-from PyQt5.QtWidgets import  QDialog,QApplication
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QMessageBox,QButtonGroup,QDialog)
-from PyQt5.QtCore import Qt, pyqtSignal,QObject
-from PyQt5.QtGui import QIcon
 
 ###############################################################
 #  IMPORTACION DEL DISEÑO...
 ##############################################################
-from  CUERPO.DISENO.SISTEMA_CONTROL.datosCreador_dise import Ui_Dialog
+from  GUI.DISENO.datosCreador_dise import Ui_Dialog
+
 ###############################################################
 #  MIS LIBRERIAS...
 ##############################################################

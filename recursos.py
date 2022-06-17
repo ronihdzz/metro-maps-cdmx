@@ -1,26 +1,44 @@
 
+from PyQt5 import QtCore
+from PyQt5.QtGui import QIcon
+
 
 
 class App_Principal():
 
-    ARCHIVO_ESTADOS_SENSORES="CUERPO/RECURSOS/DATOS/estadosSensores.txt"
-    SONIDO_INCENDIO="CUERPO/RECURSOS/SONIDOS_SISTEMA/fuego_detectado.wav"
+    ARCHIVO_UBICACIONES_ESTACIONES=""
+    ARCHIVO_SEPARACION_ESTACIONES=""
 
-    ARDUINO_NANO_EXTENSION="COM3"
-    BLUETOOTH_HC05="COM4"
-
-    ICONO_APLICACION=":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.png"
-    NOMBRE_APLICACION="RoniHernandez99/IoT_domotica"
-    IMAGEN_SPLASH_SCREEN=":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_256px.png"
-
-
-    NOMBRE_ARCHIVO_LOG='depuracionPrograma.log'
-    
     @classmethod
     def actualizarUbicaciones(cls,ubicacion):
-        cls.ARCHIVO_ESTADOS_SENSORES=ubicacion+cls.ARCHIVO_ESTADOS_SENSORES
-        cls.SONIDO_INCENDIO=ubicacion+cls.SONIDO_INCENDIO
-        cls.NOMBRE_ARCHIVO_LOG=ubicacion+cls.NOMBRE_ARCHIVO_LOG
+        cls.ARCHIVO_UBICACIONES_ESTACIONES=ubicacion+cls.ARCHIVO_UBICACIONES_ESTACIONES
+        cls.ARCHIVO_SEPARACION_ESTACIONES=ubicacion+cls.ARCHIVO_SEPARACION_ESTACIONES
+
+
+
+
+
+class App_Principal():
+
+    NOMBRE_APLICACION="metro-maps-cdmx"
+    ICONO_APLICACION=":/app/multimedia/imagenes/app/icono.png"
+    IMAGEN_SPLASH_SCREEN=":/app/multimedia/imagenes/app/icono.png"
+
+    ARCHIVO_UBICACIONES_ESTACIONES="multimedia/archivos/estaciones_ubicacion_2.xlsx"
+    ARCHIVO_SEPARACION_ESTACIONES="multimedia/archivos/estaciones_separacion.xlsx"
+
+    CARPETA_AUDIOS_ESTACIONES="multimedia/audios_estaciones_metro/"
+    CARPETA_FRASES="multimedia/audios_frases/"
+
+    FRASE_INICIO=CARPETA_FRASES+"frase_inicio.mp3"
+    FRASE_INTERMEDIA=CARPETA_FRASES+"frase_intermedia.mp3"
+
+
+    @classmethod
+    def actualizarUbicaciones(cls,ubicacion):
+        cls.ARCHIVO_UBICACIONES_ESTACIONES=ubicacion+cls.ARCHIVO_UBICACIONES_ESTACIONES
+        cls.ARCHIVO_SEPARACION_ESTACIONES=ubicacion+cls.ARCHIVO_SEPARACION_ESTACIONES
+
 
 
 class App_datosCreador():
@@ -34,10 +52,10 @@ class App_datosCreador():
     GITHUB_NOMBRE="RoniHernandez99"
     GITHUB_LINK="https://github.com/RoniHernandez99"
     
-    REPOSITORIO_PROYECTO_NOMBRE="IoT_domotica"
-    REPOSITORIO_PROYECTO_LINK="https://github.com/RoniHernandez99/IoT_domotica"
+    REPOSITORIO_PROYECTO_NOMBRE="metro-maps-cdmx"
+    REPOSITORIO_PROYECTO_LINK="https://github.com/RoniHernandez99/metro-maps-cdmx"
 
-    FOTO_PROGRAMADOR=":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/yoMero2.jpg"
+    FOTO_PROGRAMADOR=":/autor/multimedia/imagenes/autor/roni_code_99.jpg"
 
 
     # Datos del mensaje que se mandaria al programador 
@@ -46,43 +64,7 @@ class App_datosCreador():
     GMAIL_CUERPO=f"Hola {NOMBRE_PROGRAMADOR} espero tengas un buen dia, el motivo del mensaje es:"
 
 
-class App_Alarmas():
 
-    NOMBRE_BASE_DATOS_ALARMAS="CUERPO/RECURSOS/DATOS/BaseDatosAlarma.db"
-
-    CARPETA_MUSICA="CUERPO/RECURSOS/MUSICA/"
-    CARPETA_MUSICA_DEFAULT="DEFAULT/"
-    CARPETA_MUSICA_MIA="MIA/"
-    
-    NOMBRE_SONIDO_NULL="SIN MUSICA"
-    AUDIO_YA_DESPIERTA="CUERPO/RECURSOS/SONIDOS_SISTEMA/hora_despertar.wav"
-    AUDIO_IR_DORMIR="CUERPO/RECURSOS/SONIDOS_SISTEMA/hora_dormir.wav"
-    AUDIO_HAZ_DEBERES="CUERPO/RECURSOS/SONIDOS_SISTEMA/hora_deberes.wav"
-
-    @classmethod
-    def actualizarUbicaciones(cls,ubicacion):
-
-        cls.NOMBRE_BASE_DATOS_ALARMAS=ubicacion+cls.NOMBRE_BASE_DATOS_ALARMAS
-        cls.CARPETA_MUSICA=ubicacion+cls.CARPETA_MUSICA
-
-        cls.AUDIO_YA_DESPIERTA=ubicacion+cls.AUDIO_YA_DESPIERTA
-        cls.AUDIO_IR_DORMIR=ubicacion+cls.AUDIO_IR_DORMIR
-        cls.AUDIO_HAZ_DEBERES=ubicacion+cls.AUDIO_HAZ_DEBERES
-
-
-
-class App_Deberes():
-    ARCHIVO_DEBERES="CUERPO/RECURSOS/DATOS/deberes.txt"
-    SEPARADOR_DEBERES='^'
-
-    @classmethod
-    def actualizarUbicaciones(cls,ubicacion):
-        cls.ARCHIVO_DEBERES=ubicacion+cls.ARCHIVO_DEBERES
-
-
-from PyQt5.QtCore import pyqtSignal
-from PyQt5 import QtCore
-from PyQt5.QtGui import QIcon
 
 
 #class HuellaAplicacion(QtCore.QObject):
