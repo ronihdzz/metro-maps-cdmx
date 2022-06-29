@@ -1,0 +1,5 @@
+# la carpeta del entorno virtual del proyecto
+env-metro/
+
+# ignorando todos los archivos que tengan la terminacion '.ypc'
+*.ypc

@@ -49,7 +49,7 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
         # setting  the geometry of window
         self.setGeometry(60, 60,ANCHO_PANTALLA,ALTO_PANTALLA)
 
-        self.area=MapaInteractivoCompleto()
+        self.area=MapaInteractivoCompleto(file_lat_long_red=self.file_ubicaciones)
         self.stack_panel_metro.addWidget(self.area)
         
         self.stack_panel_metro.setSizePolicy(
@@ -89,7 +89,7 @@ class Proyecto(QtWidgets.QWidget, Ui_Form,HuellaAplicacion):
 
         # botones de accion...
         self.btn_buscar.clicked.connect(self.obtener_ruta_mas_cercana)
-        self.area.panel.senal_punto_clic.connect(self.mostrar_estacion_clic)
+        self.area.senal_punto_panel_clic.connect(self.mostrar_estacion_clic)
 
 
         self.ventana_datos_creador=Dialog_datosCreador()
