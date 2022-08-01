@@ -3,3 +3,4 @@ env-metro/
 
 # ignorando todos los archivos que tengan la terminacion '.ypc'
 *.ypc
+*.pyc

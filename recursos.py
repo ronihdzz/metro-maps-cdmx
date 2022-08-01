@@ -15,9 +15,6 @@ class App_Principal():
         cls.ARCHIVO_SEPARACION_ESTACIONES=ubicacion+cls.ARCHIVO_SEPARACION_ESTACIONES
 
 
-
-
-
 class App_Principal():
 
     NOMBRE_APLICACION="metro-maps-cdmx"
@@ -32,6 +29,11 @@ class App_Principal():
 
     FRASE_INICIO=CARPETA_FRASES+"frase_inicio.mp3"
     FRASE_INTERMEDIA=CARPETA_FRASES+"frase_intermedia.mp3"
+
+
+    RUTA_IMAGENES_METRO="estaciones_metro/multimedia/imagenes/estaciones_metro/todas/"
+
+
 
 
     @classmethod
@@ -72,9 +74,10 @@ class HuellaAplicacion(QtCore.QObject):
     NOMBRE_APLICACION=App_Principal.NOMBRE_APLICACION
     ICONO_APLICACION=App_Principal.ICONO_APLICACION
 
-    def __init__(self):
+    def __init__(self,is_windows:bool=True):
         #NO USAMOS EL CONSTRUCTOR DEL PADRE POR LO TANTO NO HACEMOS SUS CONFIGURACIONES DEFAULT
-        self.dejarHuella()
+        if is_windows:
+            self.dejarHuella()
     
 
     def dejarHuella(self):
