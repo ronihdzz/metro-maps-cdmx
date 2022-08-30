@@ -1,13 +1,9 @@
-matplotlib
-pandas
 pyqt5
-pyqt5-tools
-networkx
+pytest
+pandas
 openpyxl
-unidecode  # para quitar acentos a una palabra
 pygame # de dudar
+networkx
+unidecode  # para quitar acentos a una palabra
 mutagen # de dudar
-
 gTTS  # para convertir texto a voz 
-
-

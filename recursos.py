@@ -1,21 +1,21 @@
-
 from PyQt5 import QtCore
 from PyQt5.QtGui import QIcon
 
 
-
 class App_Principal():
 
-    ARCHIVO_UBICACIONES_ESTACIONES=""
-    ARCHIVO_SEPARACION_ESTACIONES=""
+    #############################################################################################
+    # D A T O S    D E L     S E R V E R    Q U E    E J E C U T A   E L   S E R V I C I O   
+    #                  Q U E   L A   G U I    C O N S U M I R A  
+    #############################################################################################
+    
+    SERVER_IP="127.0.0.1"
+    SERVER_PORT=1111
 
-    @classmethod
-    def actualizarUbicaciones(cls,ubicacion):
-        cls.ARCHIVO_UBICACIONES_ESTACIONES=ubicacion+cls.ARCHIVO_UBICACIONES_ESTACIONES
-        cls.ARCHIVO_SEPARACION_ESTACIONES=ubicacion+cls.ARCHIVO_SEPARACION_ESTACIONES
-
-
-class App_Principal():
+    #############################################################################################
+    # D A T O S    Q U E         R E Q U I E R E        L A        G U I    
+    #############################################################################################
+    
 
     NOMBRE_APLICACION="metro-maps-cdmx"
     ICONO_APLICACION=":/app/multimedia/imagenes/app/icono.png"
@@ -26,6 +26,7 @@ class App_Principal():
 
     CARPETA_AUDIOS_ESTACIONES="multimedia/audios_estaciones_metro/"
     CARPETA_FRASES="multimedia/audios_frases/"
+    CARPETA_IMAGENES_ESTACIONES="multimedia/imagenes/estaciones_metro/todas/"
 
     FRASE_INICIO=CARPETA_FRASES+"frase_inicio.mp3"
     FRASE_INTERMEDIA=CARPETA_FRASES+"frase_intermedia.mp3"
@@ -33,8 +34,7 @@ class App_Principal():
 
     RUTA_IMAGENES_METRO="estaciones_metro/multimedia/imagenes/estaciones_metro/todas/"
 
-
-
+    
 
     @classmethod
     def actualizarUbicaciones(cls,ubicacion):
@@ -64,8 +64,6 @@ class App_datosCreador():
     GMAILS=["roni.hernandez.1999@gmail.com"]
     GMAIL_SUBJECT=f"Comentarios acerca de: {REPOSITORIO_PROYECTO_NOMBRE}"
     GMAIL_CUERPO=f"Hola {NOMBRE_PROGRAMADOR} espero tengas un buen dia, el motivo del mensaje es:"
-
-
 
 
 

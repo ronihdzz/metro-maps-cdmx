@@ -14,3 +14,8 @@ C) Distancias entre cada estación del metro
 https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-
 
 https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-/blob/main/183arestasOrigDestPesoVirgulasSemEspacoNaoDirecional.txt
+
+
+D) Reproducir listas de reproduccion de audio
+
+https://stackoverflow.com/questions/58630700/utilising-the-pygame-mixer-music-get-endevent

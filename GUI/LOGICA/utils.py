@@ -6,7 +6,7 @@ import pygame
 
 
 class ListaInteractivaNombres(HuellaAplicacion):
-    senal_cambio_nombre = pyqtSignal(list)
+    senal_cambio_nombre = pyqtSignal(str)
     
     def __init__(self,lista_nombres_validos:list,cmb_box_mostrador_lista:QComboBox):
         QObject.__init__(self)
@@ -53,7 +53,7 @@ class ListaInteractivaNombres(HuellaAplicacion):
         elif self.index_lista_seleccionado!=index:
             self.index_lista_seleccionado=index
             nombre_elemento_lista_selec=self.lista_nombres_validos[index]
-            self.senal_cambio_nombre.emit( [self.index_lista_seleccionado,nombre_elemento_lista_selec] )
+            self.senal_cambio_nombre.emit( nombre_elemento_lista_selec )
 
     def get_nombre_seleccionado(self)->str:
         if self.index_lista_seleccionado>-1:
