@@ -4,14 +4,14 @@
 #### Autor: David Roni Hernández Beltrán
 <hr>
 
-<br><br>
+<br>
 
-Explicación del proyecto en español:
+Video de la explicación del proyecto en español:
 
 [![Alt text](https://img.youtube.com/vi/uFwvX6JYM38/0.jpg)](https://www.youtube.com/watch?v=uFwvX6JYM38)
 
 
-Explicación del proyecto en ingles:
+Video de la explicación del proyecto en ingles:
 
 [![Alt text](https://img.youtube.com/vi/uFwvX6JYM38/0.jpg)](https://www.youtube.com/watch?v=uFwvX6JYM38)
 
@@ -174,29 +174,203 @@ A continuación se muestra como poder instalar los paquetes antes mencionados:
     <pre><code>pip3 install gTTS</code></pre>
 
 
-## **2) Funcionamiento**
+
+## **2) Como ejecutar el proyecto**
+
+Para poder ejecutar el proyecto es importante saber que:
+metro maps es un proyecto conformado de dos partes:
+
+* **El cliente**: el programa con el que interactuara la persona para obtener la ruta más cercana.
+* **El servidor**: el programa que estara ejecutando una computadora y que sera el encargado de  calcular la ruta mas cercana para cada persona.
+
+**NOTA:** El cliente y el servidor pueden ejecutarse en una misma computadora, pero lo ideal seria que se ejecutaran en una distinta computara.El programa del cliente puede ejecutarse en distintas computadoras.El programa del servidor solo se ejecutara en una computadora.
+
+¿Como ejecutar el proyecto?
+
+Si los scripts: cliente y servidor se ejecutaran en distintas maquinas y dichas maquinas estan conectadas a la misma red:
+
+* **PASO 1** Cerciorarse que las computadoras que correran el programa de cliente esten conectados en la misma red de la computadora que ejecutara el programa del servidor.
+* **PASO 2** Obten la direccion IPv4 de la computadora que ejecutara el programa del servidor:
+    * Para obtener la direccion IPV4 en linux/mac, escribir lo siguiente en consola:
+
+        <pre><code>ifconfig</code></pre>
+
+    * Para obtener la direccion IPV4 en windows, escribir lo siguiente en consola:
+
+        <pre><code>ipconfig</code></pre>
+
+* **PASO 3** En el script **<<recursos.py>>** del proyecto:
+
+    ```
+    ├── METRO-MAPS-CDMX
+    │   ├── GUI
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   ├── ...
+    │   ├── multimedia
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   ├── ...
+    │   ├── procesamiento_datos
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   ├── ...
+    │   ├── tests
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   ├── ...
+    │   ├── .gitignore
+    │   ├── images_rc.py
+    │   ├── images.qrc
+    │   ├── LICENSE
+    │   ├── main_cliente.py
+    │   ├── main_servidor
+    │   ├──    ...
+    │   ├──    ...
+    │   ├── recursos.py <============
+    │   ├── requirements.txt
+    ```
+
+    Modicar los valores de lo señalado por las flechas:
+
+    ```{python}
+    from PyQt5 import QtCore
+    from PyQt5.QtGui import QIcon
 
 
-## **3) Ejecutar los tests**
+    class App_Principal():
+
+        ###############################################
+        # DATOS DEL SERVER QUE EJECUTA EL SERVICIO   
+        #     QUE LA  GUI  CONSUMIRA  
+        ###############################################
+        
+        SERVER_IP="127.0.0.1"  <===================== editar valor
+        SERVER_PORT=1111       <===================== editar valor
+
+        #################################################
+        # DATOS  QUE  REQUIERE  LA  GUI    
+        #################################################
+        
+    ```
+
+    ¿que valores se deben poner en las variables señaladas por las flechas?
+
+    En la variable: **<<SERVER_IP>>** igualarla a un string que contenga la direccion IPV4 de la computadora que ejecutara el programa del servidor.
+
+    En la variable  **<<SERVER_PORT>>** igualarlo a un dato de tipo entero que contenga el numero de puerto en el que se ejecutara el socket del servidor.Es importante recordar que los por lo general libres son los puertos en el ragno de: 1024 a 49151.
+
+
+* **PASO 4** Guardar los cambios del proyecto realizados en el paso anterior.
+
+* **PASO 5** Copiar el proyecto con los cambios realizados del paso 3, en las computadoras que ejecutaran la aplicacion de cliente y en la computadora que ejecutara la aplicacion de servidor.
+
+
+* **PASO 6** En la computadora que ejecutara la aplicacion del servidor, ubicarse en la carpeta que esta almacenado el script: **<<main_servidor.py>>** y posteriormente ejecutar el siguiente comando:
+
+    <pre><code>python main_servidor.py</code></pre>
+
+
+
+* **PASO 7** En las computadoras que ejecutaran la aplicacion del cliente, ubicarse en la carpeta que esta almacenado el script: **<<main_cliente.py>>** y posteriormente ejecutar el siguiente comando:
+
+    <pre><code>python main_cliente.py</code></pre>
+
+
+Si los scripts: cliente y servidor se ejecutaran en la misma maquina:
+
+* **PASO 1** Abrir una terminal en la computadora, ubicarse en la carpeta que esta almacenado el script: **<<main_servidor.py>>** y posteriormente ejecutar el siguiente comando:
+
+    <pre><code>python main_servidor.py</code></pre>
+
+
+* **PASO 2** Abrir otra terminal en la computadora, ubicarse en la carpeta que esta almacenado el script: **<<main_cliente.py>>** y posteriormente ejecutar el siguiente comando:
+
+    <pre><code>python main_cliente.py</code></pre>
+
+
+## **3) Funcionamiento del proyecto**
+
+Funcionamiento del programa del cliente:
+
+El programa es una GUI de escritorio pensada para que el usuario la pueda usar y obtener la ruta a seguir. Lo que tendra que hacer el usuario es lo siguiente:
+
+¿Que debera hacer el usuario para obtener la ruta a seguir?
+
+* Seleccionar la estacion origen 
+* Seleccionar la estacion destino
+* Dar clic sobre el boton con la leyenda: **<<obtener>>** 
+
+Con los pasos anteriores el usuario:
+
+* Vera los nombres de las estaciones de la ruta a seguir
+
+
+* Vera la cantidad de estaciones a recorrer:
+
+
+* Vera la distancia total a reccorer:
+
+
+* Vera la ruta a seguir marcada en el mapa de puntos
+
+
+
+Si el usuario desea escuchar en audio la ruta a seguir
+debera hacer lo siguiente:
+
+* Seleccionar la estacion origen si no se ha seleccionado
+* Seleccionar la estacion destino si no se ha seleccionado
+* Cersiorarse que este habilitado el sonido y si no esta habilitado
+habilitarlo, dando clic izquierdo sobre el circulo que tiene en la
+parte inferior la leyenda: **<<Con sonido>>**
+* Dar clic sobre el boton con la leyenda: **<<obtener>>** 
+
+
+El usuario puede explorar cada punto del mapa y ver que estacion de
+metro representa dando clic izquierdo sobre el punto respectivo.Cuando
+el usuario de clic sobre el punto respectivo, vera en la parte superior 
+izquierda de la GUI la imagen de la estacion del metro que representa dicho punto
+
+
+
+NOTA: Si el usuario tiene habilitado el sonido, entonces cada vez que de clic sobre un punto
+del mapa tambien escuchara en audio el nombre de la estacion del metro que representa dicho punto.
+
+
+El usuario podra  ver los contactos del desarrollador de este proyecto:
+
+
+La aplicacion de cliente metro-maps-cdmx ofrece un apartado en donde el usuario pueda ver los contactos del programador, es decir mis datos de contacto personales, tambien muestra un link de acceso al repositorio de todo este proyecto, lo único que se tendrá que hacer es dar clic izquierdo sobre el icono con signo de exclamación e inmediatamente se desplegara una ventana con dichos datos.
+
+A continuación de muestra como:
+
+
+
+
+Funcionamiento del programa del servidor:
+ 
+Este programa mostrara en consola los datos(direccion IP, puerto, nombre estacion origen, nombre estacion destino,etc. ) de cada cliente que desea obtener la ruta mas cercana entre su estacion origen y estacion destino.
+
+
+## **4) Ejecutar los tests**
 <div class="myWrapper" markdown="1" align="left">
 
-Para ejecutar los tests debera ubicarse a la altura del main_gui.py 
-y a la altura del main_server.py y ejecutar el siguiente comando:
+Debido a que todos los audios, imagenes y archivos que contienen informacion de cada estacion del metro se creo el siguiente tests que se encarga de verificar que todos los audios imagenes y archivos contengan los mismos nombres de estaciones de metro y la misma cantidad de estaciones de metro.
+
+Para ejecutar los tests debera ubicarse a la altura del **<<main_gui.py>>**  y a la altura del **<<main_server.py>>** y ejecutar el siguiente comando:
 
 <pre><code>pytest tests</code></pre>
 
 
-## **4) Fuentes de informacion**
+## **5) Fuentes de informacion**
 
 * Imagenes de las estaciones del metro: https://metro.cdmx.gob.mx/la-red/linea-1
 
 * Latitudes y longitudes del metro: https://datos.cdmx.gob.mx/gl/dataset/lineas-y-estaciones-del-metro/resource/0869e0dd-6876-4446-a199-8f670a359c00
 
-
-* Distancias entre cada estación del metro: 
-    * https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-
-
-    * https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-/blob/main/183arestasOrigDestPesoVirgulasSemEspacoNaoDirecional.txt
-
+* Distancias entre cada estación del metro: https://github.com/IgorEM/Melhor-Rota---Metro-da-cidade-do-Mexico---Dijkstra-/blob/main/183arestasOrigDestPesoVirgulasSemEspacoNaoDirecional.txt
 
 * Script reproductor de listas de audio: https://stackoverflow.com/questions/58630700/utilising-the-pygame-mixer-music-get-endevent
