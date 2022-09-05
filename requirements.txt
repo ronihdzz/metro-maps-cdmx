@@ -6,4 +6,5 @@ pygame # de dudar
 networkx
 unidecode  # para quitar acentos a una palabra
 mutagen # de dudar
-gTTS  # para convertir texto a voz 
+gTTS  # para convertir texto a voz
+pre-commit

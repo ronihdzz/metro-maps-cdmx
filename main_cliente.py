@@ -1,38 +1,37 @@
 #! /usr/bin/env python3
 
-import sys
-from PyQt5.QtWidgets import  QApplication
 import os
+import sys
+
+from PyQt5.QtWidgets import QApplication
+
+import recursos
 from GUI.LOGICA.main_metro_maps import MetroMaps
 from GUI.LOGICA.socket_client import ClientSocket
 
-import recursos
-
-
-if __name__ == "__main__":     
+if __name__ == "__main__":
 
     ##############################################################################################
     # CREANDO CLIENTE QUE CONSULTARA A SERVIDOR
     # ############################################################################################
 
-    cliente=ClientSocket(
+    cliente = ClientSocket(
         ip_server=recursos.App_Principal.SERVER_IP,
-        port_server=recursos.App_Principal.SERVER_PORT
+        port_server=recursos.App_Principal.SERVER_PORT,
     )
 
-
     ##############################################################################################
-    # CREANDO LA GUI 
-    # ############################################################################################   
+    # CREANDO LA GUI
+    # ############################################################################################
 
-    direccionTotal=sys.argv[0]
+    direccionTotal = sys.argv[0]
 
-    direccionPartes=os.path.normpath(direccionTotal)
-    direccionPartes=direccionPartes.split(os.sep)
-    ruta_direccionTotal = os.sep.join( direccionPartes[:-1] )
-    if len(direccionPartes)>1:
-        ruta_direccionTotal+=os.sep
-   
+    direccionPartes = os.path.normpath(direccionTotal)
+    direccionPartes = direccionPartes.split(os.sep)
+    ruta_direccionTotal = os.sep.join(direccionPartes[:-1])
+    if len(direccionPartes) > 1:
+        ruta_direccionTotal += os.sep
+
     recursos.App_Principal.actualizarUbicaciones(ubicacion=ruta_direccionTotal)
 
     # crear aplicacion
@@ -46,7 +45,7 @@ if __name__ == "__main__":
         audio_frase_intermedia=recursos.App_Principal.FRASE_INTERMEDIA,
         ancho_panel=2000,
         alto_panel=800,
-        margen_panel=20
+        margen_panel=20,
     )
 
     # iniciado app

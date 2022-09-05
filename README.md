@@ -71,11 +71,11 @@ tambien instalar los siguientes paquetes:
 * pytest
 * pandas
 * openpyxl
-* pygame 
+* pygame
 * networkx
-* unidecode  
-* mutagen 
-* gTTS  
+* unidecode
+* mutagen
+* gTTS
 
 
 Recomendación: Instalar los paquetes  en un **virtualenv** la cual  es una herramienta para crear entornos Python aislados, con el fin de evitar problemas  de dependencias y versiones, si desea consultar información de como instalar un entorno virtual recomiendo el siguiente link: https://docs.python.org/es/3/tutorial/venv.html
@@ -243,17 +243,17 @@ Si los scripts: cliente y servidor se ejecutaran en distintas maquinas y dichas 
     class App_Principal():
 
         ###############################################
-        # DATOS DEL SERVER QUE EJECUTA EL SERVICIO   
-        #     QUE LA  GUI  CONSUMIRA  
+        # DATOS DEL SERVER QUE EJECUTA EL SERVICIO
+        #     QUE LA  GUI  CONSUMIRA
         ###############################################
-        
+
         SERVER_IP="127.0.0.1"  <===================== editar valor
         SERVER_PORT=1111       <===================== editar valor
 
         #################################################
-        # DATOS  QUE  REQUIERE  LA  GUI    
+        # DATOS  QUE  REQUIERE  LA  GUI
         #################################################
-        
+
     ```
 
     ¿que valores se deben poner en las variables señaladas por las flechas?
@@ -299,9 +299,9 @@ El programa es una GUI de escritorio pensada para que el usuario la pueda usar y
 
 ¿Que debera hacer el usuario para obtener la ruta a seguir?
 
-* Seleccionar la estacion origen 
+* Seleccionar la estacion origen
 * Seleccionar la estacion destino
-* Dar clic sobre el boton con la leyenda: **<<obtener>>** 
+* Dar clic sobre el boton con la leyenda: **<<obtener>>**
 
 Con los pasos anteriores el usuario:
 
@@ -326,12 +326,12 @@ debera hacer lo siguiente:
 * Cersiorarse que este habilitado el sonido y si no esta habilitado
 habilitarlo, dando clic izquierdo sobre el circulo que tiene en la
 parte inferior la leyenda: **<<Con sonido>>**
-* Dar clic sobre el boton con la leyenda: **<<obtener>>** 
+* Dar clic sobre el boton con la leyenda: **<<obtener>>**
 
 
 El usuario puede explorar cada punto del mapa y ver que estacion de
 metro representa dando clic izquierdo sobre el punto respectivo.Cuando
-el usuario de clic sobre el punto respectivo, vera en la parte superior 
+el usuario de clic sobre el punto respectivo, vera en la parte superior
 izquierda de la GUI la imagen de la estacion del metro que representa dicho punto
 
 
@@ -351,7 +351,7 @@ A continuación de muestra como:
 
 
 Funcionamiento del programa del servidor:
- 
+
 Este programa mostrara en consola los datos(direccion IP, puerto, nombre estacion origen, nombre estacion destino,etc. ) de cada cliente que desea obtener la ruta mas cercana entre su estacion origen y estacion destino.
 
 
@@ -363,6 +363,16 @@ Debido a que todos los audios, imagenes y archivos que contienen informacion de 
 Para ejecutar los tests debera ubicarse a la altura del **<<main_gui.py>>**  y a la altura del **<<main_server.py>>** y ejecutar el siguiente comando:
 
 <pre><code>pytest tests</code></pre>
+
+## Agregar nuevo codigo
+
+Si deseas contribuir al proyecto no olvidar pre-formatear tu codigo con ayuda de pre-commit:}
+
+<pre><code>pre-commit install</code></pre>
+
+<pre><code>pre-commit run --all-files</code></pre>
+
+<pre><code>git commit -m "blablabla" --no-verify</code></pre>
 
 
 ## **5) Fuentes de informacion**

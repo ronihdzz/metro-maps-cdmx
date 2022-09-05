@@ -31,7 +31,7 @@
     <selectedon>:/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico</selectedon>:/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">#Form{    
+   <string notr="true">#Form{
 border:1px solid white;
 background-color: #193b58;
 padding:0;

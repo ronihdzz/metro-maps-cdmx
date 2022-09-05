@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 # Form implementation generated from reading ui file 'main_dise.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
@@ -17,34 +15,86 @@ class Ui_Form(object):
         Form.resize(943, 527)
         Form.setMinimumSize(QtCore.QSize(940, 470))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Disabled, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Disabled, QtGui.QIcon.On)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Active, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Active, QtGui.QIcon.On)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Selected, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap(":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"), QtGui.QIcon.Selected, QtGui.QIcon.On)
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.On,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Disabled,
+            QtGui.QIcon.Off,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Disabled,
+            QtGui.QIcon.On,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Active,
+            QtGui.QIcon.Off,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Active,
+            QtGui.QIcon.On,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Selected,
+            QtGui.QIcon.Off,
+        )
+        icon.addPixmap(
+            QtGui.QPixmap(
+                ":/SISTEMA_CONTROL/IMAGENES/SISTEMA_CONTROL/RoniHernandez99_IoT_domotica_128px.ico"
+            ),
+            QtGui.QIcon.Selected,
+            QtGui.QIcon.On,
+        )
         Form.setWindowIcon(icon)
-        Form.setStyleSheet("#Form{    \n"
-"border:1px solid white;\n"
-"background-color: #193b58;\n"
-"padding:0;\n"
-"}\n"
-"\n"
-"")
+        Form.setStyleSheet(
+            "#Form{    \n"
+            "border:1px solid white;\n"
+            "background-color: #193b58;\n"
+            "padding:0;\n"
+            "}\n"
+            "\n"
+            ""
+        )
         Form.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Mexico))
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout_3.setContentsMargins(-1, 0, -1, 0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.widget_alarmasNotas = QtWidgets.QWidget(Form)
         self.widget_alarmasNotas.setMinimumSize(QtCore.QSize(410, 410))
-        self.widget_alarmasNotas.setStyleSheet("#widget_alarmasNotas{\n"
-"margin:0px;\n"
-"background-color:#d8d8d8;\n"
-"padding: 50px 50px 50px 50px;\n"
-"padding: 0;\n"
-"}")
+        self.widget_alarmasNotas.setStyleSheet(
+            "#widget_alarmasNotas{\n"
+            "margin:0px;\n"
+            "background-color:#d8d8d8;\n"
+            "padding: 50px 50px 50px 50px;\n"
+            "padding: 0;\n"
+            "}"
+        )
         self.widget_alarmasNotas.setObjectName("widget_alarmasNotas")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget_alarmasNotas)
         self.verticalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetMaximumSize)
@@ -58,17 +108,19 @@ class Ui_Form(object):
         self.btn_info.setMaximumSize(QtCore.QSize(35, 35))
         self.btn_info.setSizeIncrement(QtCore.QSize(0, 0))
         self.btn_info.setBaseSize(QtCore.QSize(25, 25))
-        self.btn_info.setStyleSheet("QPushButton {\n"
-"border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_off.png);\n"
-" }\n"
-"\n"
-"QPushButton:hover {\n"
-"border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_on.png);;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_off.png);\n"
-"}")
+        self.btn_info.setStyleSheet(
+            "QPushButton {\n"
+            "border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_off.png);\n"
+            " }\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_on.png);;\n"
+            "}\n"
+            "\n"
+            "QPushButton:pressed {\n"
+            "border-image:url(:/iconos_estandar/multimedia/imagenes/estandar/info_off.png);\n"
+            "}"
+        )
         self.btn_info.setText("")
         self.btn_info.setObjectName("btn_info")
         self.horizontalLayout_15.addWidget(self.btn_info)
@@ -76,7 +128,9 @@ class Ui_Form(object):
         self.bel_estacion_clic.setMinimumSize(QtCore.QSize(63, 63))
         self.bel_estacion_clic.setMaximumSize(QtCore.QSize(150, 150))
         self.bel_estacion_clic.setBaseSize(QtCore.QSize(63, 63))
-        self.bel_estacion_clic.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);")
+        self.bel_estacion_clic.setStyleSheet(
+            "image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);"
+        )
         self.bel_estacion_clic.setText("")
         self.bel_estacion_clic.setObjectName("bel_estacion_clic")
         self.horizontalLayout_15.addWidget(self.bel_estacion_clic)
@@ -94,27 +148,29 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(14)
         self.rb_con_sonido.setFont(font)
-        self.rb_con_sonido.setStyleSheet("QRadioButton {\n"
-"\n"
-"}\n"
-"\n"
-"QRadioButton::indicator {\n"
-"    width:                  15px;\n"
-"    height:                 15px;\n"
-"    border-radius:          9px;\n"
-"    border:                 2px solid black;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked {\n"
-"    background-color:        #193b58;\n"
-"    border:                 2px solid black;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked {\n"
-"    background-color:       #d8d8d8;\n"
-"    border:                  2px solid black;\n"
-"}\n"
-"")
+        self.rb_con_sonido.setStyleSheet(
+            "QRadioButton {\n"
+            "\n"
+            "}\n"
+            "\n"
+            "QRadioButton::indicator {\n"
+            "    width:                  15px;\n"
+            "    height:                 15px;\n"
+            "    border-radius:          9px;\n"
+            "    border:                 2px solid black;\n"
+            "}\n"
+            "\n"
+            "QRadioButton::indicator:checked {\n"
+            "    background-color:        #193b58;\n"
+            "    border:                 2px solid black;\n"
+            "}\n"
+            "\n"
+            "QRadioButton::indicator:unchecked {\n"
+            "    background-color:       #d8d8d8;\n"
+            "    border:                  2px solid black;\n"
+            "}\n"
+            ""
+        )
         self.rb_con_sonido.setText("")
         self.rb_con_sonido.setObjectName("rb_con_sonido")
         self.verticalLayout_7.addWidget(self.rb_con_sonido, 0, QtCore.Qt.AlignHCenter)
@@ -128,17 +184,19 @@ class Ui_Form(object):
         font.setItalic(False)
         font.setWeight(50)
         self.label_7.setFont(font)
-        self.label_7.setStyleSheet("  font-family: LucidaGrande;\n"
-"  font-size: 16px;\n"
-"  font-weight: normal;\n"
-"  font-stretch: normal;\n"
-"  font-style: normal;\n"
-"  line-height: normal;\n"
-"  letter-spacing: normal;\n"
-"  color: black;\n"
-"  /*border: 1px solid  #193b58; */\n"
-"background-color: #d8d8d8;\n"
-" /*font-weight: bold;*/")
+        self.label_7.setStyleSheet(
+            "  font-family: LucidaGrande;\n"
+            "  font-size: 16px;\n"
+            "  font-weight: normal;\n"
+            "  font-stretch: normal;\n"
+            "  font-style: normal;\n"
+            "  line-height: normal;\n"
+            "  letter-spacing: normal;\n"
+            "  color: black;\n"
+            "  /*border: 1px solid  #193b58; */\n"
+            "background-color: #d8d8d8;\n"
+            " /*font-weight: bold;*/"
+        )
         self.label_7.setAlignment(QtCore.Qt.AlignCenter)
         self.label_7.setObjectName("label_7")
         self.verticalLayout_7.addWidget(self.label_7)
@@ -153,26 +211,28 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(14)
         self.rb_sin_sonido.setFont(font)
-        self.rb_sin_sonido.setStyleSheet("QRadioButton {\n"
-"\n"
-"}\n"
-"\n"
-"QRadioButton::indicator {\n"
-"    width:                  15px;\n"
-"    height:                 15px;\n"
-"    border-radius:          9px;\n"
-"    border:                 2px solid black;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked {\n"
-"    background-color:        #193b58;\n"
-"    border:                 2px solid black;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked {\n"
-"    background-color:       #d8d8d8;\n"
-"    border:                  2px solid black;\n"
-"}")
+        self.rb_sin_sonido.setStyleSheet(
+            "QRadioButton {\n"
+            "\n"
+            "}\n"
+            "\n"
+            "QRadioButton::indicator {\n"
+            "    width:                  15px;\n"
+            "    height:                 15px;\n"
+            "    border-radius:          9px;\n"
+            "    border:                 2px solid black;\n"
+            "}\n"
+            "\n"
+            "QRadioButton::indicator:checked {\n"
+            "    background-color:        #193b58;\n"
+            "    border:                 2px solid black;\n"
+            "}\n"
+            "\n"
+            "QRadioButton::indicator:unchecked {\n"
+            "    background-color:       #d8d8d8;\n"
+            "    border:                  2px solid black;\n"
+            "}"
+        )
         self.rb_sin_sonido.setText("")
         self.rb_sin_sonido.setChecked(True)
         self.rb_sin_sonido.setObjectName("rb_sin_sonido")
@@ -187,17 +247,19 @@ class Ui_Form(object):
         font.setItalic(False)
         font.setWeight(50)
         self.label_11.setFont(font)
-        self.label_11.setStyleSheet("  font-family: LucidaGrande;\n"
-"  font-size: 16px;\n"
-"  font-weight: normal;\n"
-"  font-stretch: normal;\n"
-"  font-style: normal;\n"
-"  line-height: normal;\n"
-"  letter-spacing: normal;\n"
-"  color: black;\n"
-"  /*border: 1px solid  #193b58; */\n"
-"background-color: #d8d8d8;\n"
-" /*font-weight: bold;*/")
+        self.label_11.setStyleSheet(
+            "  font-family: LucidaGrande;\n"
+            "  font-size: 16px;\n"
+            "  font-weight: normal;\n"
+            "  font-stretch: normal;\n"
+            "  font-style: normal;\n"
+            "  line-height: normal;\n"
+            "  letter-spacing: normal;\n"
+            "  color: black;\n"
+            "  /*border: 1px solid  #193b58; */\n"
+            "background-color: #d8d8d8;\n"
+            " /*font-weight: bold;*/"
+        )
         self.label_11.setAlignment(QtCore.Qt.AlignCenter)
         self.label_11.setObjectName("label_11")
         self.verticalLayout_9.addWidget(self.label_11)
@@ -250,36 +312,38 @@ class Ui_Form(object):
         self.stack_panel_metro.setBaseSize(QtCore.QSize(380, 160))
         self.stack_panel_metro.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         self.stack_panel_metro.setToolTipDuration(0)
-        self.stack_panel_metro.setStyleSheet("QStackedWidget#stack_notas{\n"
-"padding:0px;\n"
-"background-color: #d8d8d8;\n"
-"/*border-radius: 20%;*/\n"
-"margin-top: 5px;\n"
-"margin: 0px;\n"
-"}\n"
-"\n"
-"\n"
-"QWidget{\n"
-"background-color: rgb(255, 255, 255);\n"
-"margin:0px;\n"
-"padding:0px;\n"
-"background-color: #d8d8d8;\n"
-"margin-top: 5px;\n"
-"}\n"
-"\n"
-"\n"
-"*{\n"
-"background-color: #d8d8d8;\n"
-"/*border-radius: 20%*/;\n"
-"margin: 0px;\n"
-"margin-top: 5px;\n"
-"}\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"")
+        self.stack_panel_metro.setStyleSheet(
+            "QStackedWidget#stack_notas{\n"
+            "padding:0px;\n"
+            "background-color: #d8d8d8;\n"
+            "/*border-radius: 20%;*/\n"
+            "margin-top: 5px;\n"
+            "margin: 0px;\n"
+            "}\n"
+            "\n"
+            "\n"
+            "QWidget{\n"
+            "background-color: rgb(255, 255, 255);\n"
+            "margin:0px;\n"
+            "padding:0px;\n"
+            "background-color: #d8d8d8;\n"
+            "margin-top: 5px;\n"
+            "}\n"
+            "\n"
+            "\n"
+            "*{\n"
+            "background-color: #d8d8d8;\n"
+            "/*border-radius: 20%*/;\n"
+            "margin: 0px;\n"
+            "margin-top: 5px;\n"
+            "}\n"
+            "\n"
+            "\n"
+            "\n"
+            "\n"
+            "\n"
+            ""
+        )
         self.stack_panel_metro.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.stack_panel_metro.setFrameShadow(QtWidgets.QFrame.Plain)
         self.stack_panel_metro.setObjectName("stack_panel_metro")
@@ -304,17 +368,23 @@ class Ui_Form(object):
         self.bel_estacion_origen.setMaximumSize(QtCore.QSize(160, 150))
         self.bel_estacion_origen.setSizeIncrement(QtCore.QSize(0, 0))
         self.bel_estacion_origen.setBaseSize(QtCore.QSize(60, 50))
-        self.bel_estacion_origen.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/observatorio.png);")
+        self.bel_estacion_origen.setStyleSheet(
+            "image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/observatorio.png);"
+        )
         self.bel_estacion_origen.setText("")
         self.bel_estacion_origen.setObjectName("bel_estacion_origen")
         self.verticalLayout_3.addWidget(self.bel_estacion_origen)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.cmb_box_origen = QtWidgets.QComboBox(self.widget_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.cmb_box_origen.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.cmb_box_origen.sizePolicy().hasHeightForWidth()
+        )
         self.cmb_box_origen.setSizePolicy(sizePolicy)
         self.cmb_box_origen.setObjectName("cmb_box_origen")
         self.horizontalLayout_2.addWidget(self.cmb_box_origen)
@@ -326,7 +396,9 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.verticalLayout_4.addWidget(self.label)
         self.btn_buscar = QtWidgets.QPushButton(self.widget_2)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.btn_buscar.sizePolicy().hasHeightForWidth())
@@ -347,17 +419,23 @@ class Ui_Form(object):
         self.bel_estacion_destino.setMinimumSize(QtCore.QSize(63, 63))
         self.bel_estacion_destino.setMaximumSize(QtCore.QSize(150, 150))
         self.bel_estacion_destino.setBaseSize(QtCore.QSize(63, 63))
-        self.bel_estacion_destino.setStyleSheet("image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);")
+        self.bel_estacion_destino.setStyleSheet(
+            "image: url(:/estaciones_metro/multimedia/imagenes/estaciones_metro/todas/san lazaro.png);"
+        )
         self.bel_estacion_destino.setText("")
         self.bel_estacion_destino.setObjectName("bel_estacion_destino")
         self.verticalLayout_8.addWidget(self.bel_estacion_destino)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.cmb_box_destino = QtWidgets.QComboBox(self.widget_5)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.cmb_box_destino.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.cmb_box_destino.sizePolicy().hasHeightForWidth()
+        )
         self.cmb_box_destino.setSizePolicy(sizePolicy)
         self.cmb_box_destino.setObjectName("cmb_box_destino")
         self.horizontalLayout.addWidget(self.cmb_box_destino)
@@ -378,8 +456,9 @@ class Ui_Form(object):
         self.label_9.setText(_translate("Form", "Ruta a seguir:"))
         self.label_10.setText(_translate("Form", "No. estaciones:"))
         self.bel_no_estaciones.setText(_translate("Form", "10"))
-        self.label_13.setText(_translate("Form", "Distancia en\n"
-"metros: "))
+        self.label_13.setText(_translate("Form", "Distancia en\n" "metros: "))
         self.bel_dst_ruta.setText(_translate("Form", "1520"))
         self.btn_buscar.setText(_translate("Form", "OBTENER RUTA"))
+
+
 import images_rc
