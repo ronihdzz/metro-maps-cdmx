@@ -192,7 +192,7 @@ metro maps es un proyecto conformado de dos partes:
 * **El cliente**: el programa con el que interactuara la persona para obtener la ruta más cercana.
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente.gif" style="width:100%;"  />
 </div>
 
 
@@ -200,7 +200,7 @@ metro maps es un proyecto conformado de dos partes:
 * **El servidor**: el programa que estara ejecutando una computadora y que sera el encargado de  calcular la ruta mas cercana para cada persona.
 
 <div style="text-align: center;">
-<img  src="recursos_readme/servidor.gif" style="width:60%;"  />
+<img  src="recursos_readme/servidor.gif" style="width:100%;"  />
 </div>
 
 
@@ -338,7 +338,7 @@ Ejemplo:
     * Dar clic sobre el boton con la leyenda: **<< OBTENER RUTA >>**
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_ejemplo_1.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_ejemplo_1.gif" style="width:100%;"  />
 </div>
 
 
@@ -348,21 +348,21 @@ Con los pasos anteriores el usuario:
 * Vera los nombres de las estaciones de la ruta a seguir
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_ejemplo_1_1.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_ejemplo_1_1.gif" style="width:100%;"  />
 </div>
 
 
 * Vera la cantidad de estaciones a recorrer:
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_ejemplo_1_2.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_ejemplo_1_2.gif" style="width:100%;"  />
 </div>
 
 * Vera la distancia total a reccorer:
 
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_ejemplo_1_3.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_ejemplo_1_3.gif" style="width:100%;"  />
 </div>
 
 
@@ -370,7 +370,7 @@ Con los pasos anteriores el usuario:
 
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_ejemplo_1_4.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_ejemplo_1_4.gif" style="width:100%;"  />
 </div>
 
 
@@ -386,7 +386,7 @@ parte inferior la leyenda: **<< Con sonido >>**
 * Dar clic sobre el boton con la leyenda: **<< OBTENER RUTA >>**
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_ejemplo_1_5.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_ejemplo_1_5.gif" style="width:100%;"  />
 </div>
 
 
@@ -402,7 +402,7 @@ izquierda de la GUI la imagen de la estacion del metro que representa dicho punt
 
 
 <div style="text-align: center;">
-<img  src="recursos_readme/cliente_mapa_interactivo.gif" style="width:60%;"  />
+<img  src="recursos_readme/cliente_mapa_interactivo.gif" style="width:100%;"  />
 </div>
 
 
@@ -419,7 +419,7 @@ A continuación de muestra como:
 
 
 <div style="text-align: center;">
-<img  src="recursos_readme/datos_autor.gif" style="width:60%;"  />
+<img  src="recursos_readme/datos_autor.gif" style="width:100%;"  />
 </div>
 
 
@@ -428,7 +428,7 @@ Funcionamiento del programa del servidor:
 Este programa mostrara en consola los datos(direccion IP, puerto, nombre estacion origen, nombre estacion destino,etc. ) de cada cliente que desea obtener la ruta mas cercana entre su estacion origen y estacion destino.
 
 <div style="text-align: center;">
-<img  src="recursos_readme/servidor.gif" style="width:60%;"  />
+<img  src="recursos_readme/servidor.gif" style="width:100%;"  />
 </div>
 
 
