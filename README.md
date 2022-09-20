@@ -8,20 +8,23 @@
 
 Video de la explicación del proyecto en español:
 
-[![Alt text](https://img.youtube.com/vi/uFwvX6JYM38/0.jpg)](https://www.youtube.com/watch?v=uFwvX6JYM38)
+[![Alt text](https://img.youtube.com/vi/WAINiDggNOk/0.jpg)](https://www.youtube.com/watch?v=WAINiDggNOk&t=5s)
 
 
-Video de la explicación del proyecto en ingles:
-
-[![Alt text](https://img.youtube.com/vi/uFwvX6JYM38/0.jpg)](https://www.youtube.com/watch?v=uFwvX6JYM38)
 
 
 ## **Menu**
 <hr>
 
 * [1) Prerrequisitos](#1-prerrequisitos)
-    * [1.1) Sistemas operativos](#13-sistemas-operativos)
-    * [1.2) Instalación de paquetes de python](#11-instalación-de-paquetes-de-python)
+    * [1.1) Sistemas operativos](#11-sistemas-operativos)
+    * [1.2) Instalacion de paquetes de python](#12-instalacion-de-paquetes-de-python)
+* [2) Como ejecutar el proyecto](#2-como-ejecutar-el-proyecto)
+* [3) Funcionamiento del proyecto](#3-funcionamiento-del-proyecto)
+* [4) Ejecutar los tests](#4-ejecutar-los-tests)
+* [5) Agregar nuevo codigo](#5-agregar-nuevo-codigo)
+* [6) Fuentes de informacion](#6-fuentes-de-informacion)
+
 
 <hr>
 
@@ -48,10 +51,10 @@ El programa ha sido probado con exito en los siguientes sistemas operativos:
 
 * Windows 10
 
-Sin embargo por cuestiones de disponibilidad de equipo no ha podido ser probada en otras versiones de los sitemas operativos, sin embargo deberia funcionar en otros sistemas operativas y versiones de estos, debido a que la aplicación es multiplataforma.
+Sin embargo por cuestiones de disponibilidad de equipo no ha podido ser probada en otras versiones de los sitemas operativos, sin embargo deberia funcionar en otros sistemas operativos y versiones de estos, debido a que la aplicación se creo que tecnologias multiplataformas.
 
 
-### **1.2) Instalación de paquetes de python**
+### **1.2) Instalacion de paquetes de python**
 <div class="myWrapper" markdown="1" align="left">
 
 [Regresar al menu principal](#menu)
@@ -176,12 +179,31 @@ A continuación se muestra como poder instalar los paquetes antes mencionados:
 
 
 ## **2) Como ejecutar el proyecto**
+<div class="myWrapper" markdown="1" align="left">
+
+[Regresar al menu principal](#menu)
+</div>
+
+
 
 Para poder ejecutar el proyecto es importante saber que:
 metro maps es un proyecto conformado de dos partes:
 
 * **El cliente**: el programa con el que interactuara la persona para obtener la ruta más cercana.
+
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente.gif" style="width:60%;"  />
+</div>
+
+
+
 * **El servidor**: el programa que estara ejecutando una computadora y que sera el encargado de  calcular la ruta mas cercana para cada persona.
+
+<div style="text-align: center;">
+<img  src="recursos_readme/servidor.gif" style="width:60%;"  />
+</div>
+
+
 
 **NOTA:** El cliente y el servidor pueden ejecutarse en una misma computadora, pero lo ideal seria que se ejecutaran en una distinta computara.El programa del cliente puede ejecutarse en distintas computadoras.El programa del servidor solo se ejecutara en una computadora.
 
@@ -292,6 +314,11 @@ Si los scripts: cliente y servidor se ejecutaran en la misma maquina:
 
 
 ## **3) Funcionamiento del proyecto**
+<div class="myWrapper" markdown="1" align="left">
+
+[Regresar al menu principal](#menu)
+</div>
+
 
 Funcionamiento del programa del cliente:
 
@@ -301,20 +328,50 @@ El programa es una GUI de escritorio pensada para que el usuario la pueda usar y
 
 * Seleccionar la estacion origen
 * Seleccionar la estacion destino
-* Dar clic sobre el boton con la leyenda: **<<obtener>>**
+* Dar clic sobre el boton con la leyenda: **<< OBTENER RUTA >>**
+
+Ejemplo:
+* Supongamos que un usuario se encuentra en la estacion del metro: **<< observatorio >>** y desea llegar a la estacion del metro  **<< terminar aerea >>** ¿que debera hacer el usuario para obtener la ruta mas corta?
+
+    * Seleccionar la estacion origen: **Seleccionar la estacion:  observatorio**
+    * Seleccionar la estacion destino: **Seleccionar la estacion: terminal aerea**
+    * Dar clic sobre el boton con la leyenda: **<< OBTENER RUTA >>**
+
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_ejemplo_1.gif" style="width:60%;"  />
+</div>
+
+
 
 Con los pasos anteriores el usuario:
 
 * Vera los nombres de las estaciones de la ruta a seguir
 
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_ejemplo_1_1.gif" style="width:60%;"  />
+</div>
+
 
 * Vera la cantidad de estaciones a recorrer:
 
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_ejemplo_1_2.gif" style="width:60%;"  />
+</div>
 
 * Vera la distancia total a reccorer:
 
 
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_ejemplo_1_3.gif" style="width:60%;"  />
+</div>
+
+
 * Vera la ruta a seguir marcada en el mapa de puntos
+
+
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_ejemplo_1_4.gif" style="width:60%;"  />
+</div>
 
 
 
@@ -325,8 +382,12 @@ debera hacer lo siguiente:
 * Seleccionar la estacion destino si no se ha seleccionado
 * Cersiorarse que este habilitado el sonido y si no esta habilitado
 habilitarlo, dando clic izquierdo sobre el circulo que tiene en la
-parte inferior la leyenda: **<<Con sonido>>**
-* Dar clic sobre el boton con la leyenda: **<<obtener>>**
+parte inferior la leyenda: **<< Con sonido >>**
+* Dar clic sobre el boton con la leyenda: **<< OBTENER RUTA >>**
+
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_ejemplo_1_5.gif" style="width:60%;"  />
+</div>
 
 
 El usuario puede explorar cada punto del mapa y ver que estacion de
@@ -334,9 +395,18 @@ metro representa dando clic izquierdo sobre el punto respectivo.Cuando
 el usuario de clic sobre el punto respectivo, vera en la parte superior
 izquierda de la GUI la imagen de la estacion del metro que representa dicho punto
 
+**OBSERVACIONES:**
+* **Cada punto del mapa representa cada estacion del metro**
+* **El mapa contiene todas las estaciones de la red del metro de la ciudad de mexico**
+* **Cada punto representado del mapa es una representacion a escala de la ubicacion real de cada estacion del metro ya que se tomo en cuenta cada latitud y longitud del metro para su respectiva graficacion en la cordenada exacta de la interfaz grafica del cliente.**
 
 
-NOTA: Si el usuario tiene habilitado el sonido, entonces cada vez que de clic sobre un punto
+<div style="text-align: center;">
+<img  src="recursos_readme/cliente_mapa_interactivo.gif" style="width:60%;"  />
+</div>
+
+
+**NOTA:** Si el usuario tiene habilitado el sonido, entonces cada vez que de clic sobre un punto
 del mapa tambien escuchara en audio el nombre de la estacion del metro que representa dicho punto.
 
 
@@ -348,15 +418,26 @@ La aplicacion de cliente metro-maps-cdmx ofrece un apartado en donde el usuario 
 A continuación de muestra como:
 
 
+<div style="text-align: center;">
+<img  src="recursos_readme/datos_autor.gif" style="width:60%;"  />
+</div>
 
 
 Funcionamiento del programa del servidor:
 
 Este programa mostrara en consola los datos(direccion IP, puerto, nombre estacion origen, nombre estacion destino,etc. ) de cada cliente que desea obtener la ruta mas cercana entre su estacion origen y estacion destino.
 
+<div style="text-align: center;">
+<img  src="recursos_readme/servidor.gif" style="width:60%;"  />
+</div>
+
 
 ## **4) Ejecutar los tests**
 <div class="myWrapper" markdown="1" align="left">
+
+[Regresar al menu principal](#menu)
+</div>
+
 
 Debido a que todos los audios, imagenes y archivos que contienen informacion de cada estacion del metro se creo el siguiente tests que se encarga de verificar que todos los audios imagenes y archivos contengan los mismos nombres de estaciones de metro y la misma cantidad de estaciones de metro.
 
@@ -364,18 +445,32 @@ Para ejecutar los tests debera ubicarse a la altura del **<<main_gui.py>>**  y a
 
 <pre><code>pytest tests</code></pre>
 
-## Agregar nuevo codigo
 
-Si deseas contribuir al proyecto no olvidar pre-formatear tu codigo con ayuda de pre-commit:}
+## **5) Agregar nuevo codigo**
+<div class="myWrapper" markdown="1" align="left">
+
+[Regresar al menu principal](#menu)
+</div>
+
+Si deseas contribuir al proyecto no olvidar pre-formatear tu codigo con ayuda de pre-commit, para ello deberas instalar el paquete **<< pre-commit >>**
+
+
+<pre><code>pip install pre-commit</code></pre>
+
+Y despues instalar las configuraciones respectivas del proyecto con el siguiente comando:
 
 <pre><code>pre-commit install</code></pre>
 
-<pre><code>pre-commit run --all-files</code></pre>
-
-<pre><code>git commit -m "blablabla" --no-verify</code></pre>
+Lo anterior hara que antes de que se cargue tu commit, verificara que tu codigo implementado cumpla con ciertos estandares y reglas.
 
 
-## **5) Fuentes de informacion**
+
+## **6) Fuentes de informacion**
+<div class="myWrapper" markdown="1" align="left">
+
+[Regresar al menu principal](#menu)
+</div>
+
 
 * Imagenes de las estaciones del metro: https://metro.cdmx.gob.mx/la-red/linea-1
 
